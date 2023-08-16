@@ -12,9 +12,9 @@ export default function Header() {
             
             <nav className="nav hidden lg:block" aria-label="In-page jump links">
                 <ul className="mt-16 w-max">
-                    <NavLink link="#test" title="Test" />   
-                    <NavLink link="#test" title="Test" />   
-                    <NavLink link="#test" title="Test" />   
+                    <NavLink link="#about" title="About" />   
+                    <NavLink link="#experience" title="Experience" />   
+                    <NavLink link="#projects" title="Projects" />   
                 </ul>
             </nav>
         </header>
