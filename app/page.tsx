@@ -1,8 +1,8 @@
 import Header from '@/components/header'
 import Image from 'next/image'
-import About from './about'
-import Experience from './experience'
-import Projects from './projects'
+import About from './(sections)/about'
+import Experience from './(sections)/experience'
+import Projects from './(sections)/projects'
 
 export default function Home() {
   return (
