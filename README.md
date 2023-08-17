@@ -4,12 +4,11 @@
 
 - Add meta properties
 
-## Experience
-
-- Style
-- Add experiences
-
 ## Projects
 
 - Style
 - Add projects
+
+## Infrastructure
+
+- CI/CD
