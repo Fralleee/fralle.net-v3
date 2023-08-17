@@ -1,8 +1,7 @@
-import Header from '@/components/header'
-import Image from 'next/image'
-import About from './(sections)/about'
-import Experience from './(sections)/experience'
-import Projects from './(sections)/projects'
+import Header from "@/components/header";
+import About from "./(sections)/about-section";
+import Experience from "./(sections)/experience-section";
+import Projects from "./(sections)/projects-section";
 
 export default function Home() {
   return (
@@ -14,5 +13,5 @@ export default function Home() {
         <Projects />
       </main>
     </div>
-  )
+  );
 }

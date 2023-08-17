@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.active .nav-indicator {
+  width: 4rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240/var(--tw-bg-opacity));
+}
+
+.active .nav-text {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240/var(--tw-text-opacity));
 }
