@@ -3,7 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
 import Link from "next/link";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
+import { GoDownload } from "react-icons/go";
+import { Button } from "./ui/button";
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("about");
@@ -60,6 +62,11 @@ export default function Header() {
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Software Engineer at Nira</h2>
         <p className="mt-4 max-w-xs leading-normal">I build accessible, inclusive products and digital experiences for the web.</p>
+        <Link
+          className="mt-4 flex align-baseline font-medium text-slate-200 group hover:text-teal-300 focus-visible:text-teal-300"
+          href="https://drive.google.com/uc?id=1hLQ18Bx3CMGYoTt85Ou1hSmCXv-AtAGM&export=download">
+          Download resume <GoDownload className="ml-2 translate-y-1 group-hover:translate-y-2 transition-all" />
+        </Link>
 
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
