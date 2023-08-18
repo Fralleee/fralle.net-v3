@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
 import Link from "next/link";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { GoDownload } from "react-icons/go";
+import ResumeLink from "./resume-link";
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("about");
@@ -61,21 +61,17 @@ export default function Header() {
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
         <p className="mt-4 max-w-xs leading-normal">A curious and dedicated programmer with diverse experience spanning multiple industries.</p>
-        <Link
-          className="mt-4 flex align-baseline font-medium text-slate-200 group hover:text-teal-300 focus-visible:text-teal-300"
-          href="https://drive.google.com/uc?id=1hLQ18Bx3CMGYoTt85Ou1hSmCXv-AtAGM&export=download">
-          Download resume <GoDownload className="ml-2 translate-y-1 group-hover:translate-y-2 transition-all" />
-        </Link>
+        <ResumeLink className="mt-8" />
 
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
-          <ul className="mt-16 w-max">
+          <ul className="mt-8 w-max">
             <NavLink link="#about" title="About" active={activeSection === "about"} onClick={handleNavLinkClick("about")} />
             <NavLink link="#experience" title="Experience" active={activeSection === "experience"} onClick={handleNavLinkClick("experience")} />
             <NavLink link="#projects" title="Projects" active={activeSection === "projects"} onClick={handleNavLinkClick("projects")} />
           </ul>
         </nav>
       </div>
-      <ul className="flex gap-3 items-center mt-4 lg:mt-0" aria-label="Social media">
+      <ul className="flex gap-5 items-center mt-4 lg:mt-0" aria-label="Social media">
         <li>
           <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://github.com/Fralleee/"} target="_blank" rel="noreferrer">
             <span className="sr-only">GitHub</span>

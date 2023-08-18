@@ -1,6 +1,7 @@
 import experiencesData from "@/data/experiencesData.json";
 import Section from "@/components/section";
 import Experience from "@/components/experience-card";
+import ResumeLink from "@/components/resume-link";
 
 export default function ExperienceSection() {
   const experiences: Experiences = experiencesData;
@@ -13,6 +14,7 @@ export default function ExperienceSection() {
           </li>
         ))}
       </ol>
+      <ResumeLink />
     </Section>
   );
 }
