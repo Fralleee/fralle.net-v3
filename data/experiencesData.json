@@ -1,13 +1,29 @@
 {
   "data": [
     {
+      "title": "Senior Software Engineer",
+      "company": {
+        "name": "Nira",
+        "url": "https://www.nira.com/",
+        "location": "California, US (Remote)"
+      },
+      "duration": "2023 — Present",
+      "details": "Developing authorization components for Google Drive and OneDrive.",
+      "tech": [
+        "TypeScript",
+        "React",
+        "GraphQL",
+        "ElasticSearch"
+      ]
+    },
+    {
       "title": "Software Engineer",
       "company": {
         "name": "Stack Overflow",
         "url": "https://www.stackoverflow.com/",
         "location": "New York, US (Remote)"
       },
-      "duration": "2022 — Present",
+      "duration": "2022 — 2023",
       "details": "Part of the Awareness team, primarily involved in optimizing ads and metrics to improve click-through rates, automation, and impressions.",
       "tech": [
         "TypeScript",

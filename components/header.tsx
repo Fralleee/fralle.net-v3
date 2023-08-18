@@ -60,7 +60,7 @@ export default function Header() {
           <a href="/">Roland Chelwing</a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
-        <p className="mt-4 max-w-xs leading-normal">I build accessible, inclusive products and digital experiences for the web.</p>
+        <p className="mt-4 max-w-xs leading-normal">A curious and dedicated programmer with diverse experience spanning multiple industries.</p>
         <Link
           className="mt-4 flex align-baseline font-medium text-slate-200 group hover:text-teal-300 focus-visible:text-teal-300"
           href="https://drive.google.com/uc?id=1hLQ18Bx3CMGYoTt85Ou1hSmCXv-AtAGM&export=download">
