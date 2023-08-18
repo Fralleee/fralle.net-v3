@@ -6,13 +6,13 @@ export default function ExperienceSection() {
   const experiences: Experiences = experiencesData;
   return (
     <Section id="experience" label="Experience" title="Experience">
-      <div>
-        <ol>
-          {experiences.data.map(experience => (
-            <Experience key={experience.company.name} experience={experience} />
-          ))}
-        </ol>
-      </div>
+      <ol className="group/list">
+        {experiences.data.map(experience => (
+          <li key={experience.company.name} className="mb-12">
+            <Experience experience={experience} />
+          </li>
+        ))}
+      </ol>
     </Section>
   );
 }

@@ -1,21 +1,18 @@
-import TextLink from '@/components/text-link'
-import Section from '@/components/section'
+import projectsData from "@/data/projects.json";
+import Section from "@/components/section";
+import Project from "@/components/project";
 
-export default function Projects() {
-    return (
-        <Section id="projects" label="Projects" title="Projects">
-            <div>
-                <p className="mb-4">
-                    I like playing games and getting shit done. I have already pimped out many pages in my years.
-                    I've worked at different places, one was
-                    a <TextLink href="#">fintech company</TextLink>,
-                    an <TextLink href="#">online gambling platform</TextLink>,
-                    and one of the <TextLink href="#">most visited websites in the world</TextLink>.
-                </p>
-                <p className="mb-4">
-                    Current focus...
-                </p>
-            </div>
-        </Section>
-    )
+export default function ProjectsSection() {
+  const projects: Projects = projectsData;
+  return (
+    <Section id="projects" label="Projects" title="Projects">
+      <ul className="group/list">
+        {projects.data.map(project => (
+          <li key={project.title} className="mb-12">
+            <Project project={project} />
+          </li>
+        ))}
+      </ul>
+    </Section>
+  );
 }

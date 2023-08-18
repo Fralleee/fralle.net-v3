@@ -13,3 +13,21 @@ interface Experience {
 interface Experiences {
   data: Experience[];
 }
+
+interface Link {
+  title: string;
+  href: string;
+}
+
+interface Project {
+  title: string;
+  url: string;
+  image: string;
+  details: string;
+  links: Link[];
+  tech: string[];
+}
+
+interface Projects {
+  data: Project[];
+}

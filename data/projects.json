@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "title": "SwiftPaste",
+      "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
+      "image": "/swiftpaste.png",
+      "details": "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
+      "links": [
+        {
+          "title": "Code",
+          "href": "https://github.com/Fralleee/SwiftPaste/"
+        }
+      ],
+      "tech": [
+        "TypeScript",
+        "Chrome API",
+        "React"
+      ]
+    },
+    {
+      "title": "SwiftPaste",
+      "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
+      "image": "/swiftpaste.png",
+      "details": "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
+      "links": [
+        {
+          "title": "Code",
+          "href": "https://github.com/Fralleee/SwiftPaste/"
+        }
+      ],
+      "tech": [
+        "TypeScript",
+        "Chrome API",
+        "React"
+      ]
+    },
+    {
+      "title": "SwiftPaste",
+      "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
+      "image": "/swiftpaste.png",
+      "details": "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
+      "links": [
+        {
+          "title": "Code",
+          "href": "https://github.com/Fralleee/SwiftPaste/"
+        }
+      ],
+      "tech": [
+        "TypeScript",
+        "Chrome API",
+        "React"
+      ]
+    }
+  ]
+}
