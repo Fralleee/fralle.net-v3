@@ -59,7 +59,7 @@ export default function Header() {
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           <a href="/">Roland Chelwing</a>
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Software Engineer at Nira</h2>
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
         <p className="mt-4 max-w-xs leading-normal">I build accessible, inclusive products and digital experiences for the web.</p>
         <Link
           className="mt-4 flex align-baseline font-medium text-slate-200 group hover:text-teal-300 focus-visible:text-teal-300"
