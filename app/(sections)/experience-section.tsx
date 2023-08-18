@@ -1,6 +1,6 @@
-import experiencesData from "@/data/experiences.json";
+import experiencesData from "@/data/experiencesData.json";
 import Section from "@/components/section";
-import Experience from "@/components/experience";
+import Experience from "@/components/experience-card";
 
 export default function ExperienceSection() {
   const experiences: Experiences = experiencesData;

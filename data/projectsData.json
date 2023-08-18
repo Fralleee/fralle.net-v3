@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "title": "SwiftPaste",
+      "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
+      "image": "/swiftpaste.png",
+      "details": "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
+      "links": [
+        {
+          "title": "Code",
+          "href": "https://github.com/Fralleee/SwiftPaste/"
+        }
+      ],
+      "tech": [
+        "TypeScript",
+        "Chrome API",
+        "React"
+      ]
+    },
+    {
+      "title": "Cooking with Fralle",
+      "url": "https://cooking.fralle.net/",
+      "image": "/cooking-with-fralle.png",
+      "details": "Keeping track of my preferred recipes was constantly difficult. Whether I utilized concealed Facebook groups or resorted to browser bookmarks, no method seemed sufficiently effective. The best answer to this issue was to create a self-hosted website with a brief URL for convenient accessibility.",
+      "links": [
+        {
+          "title": "Code",
+          "href": "https://github.com/Fralleee/cooking-with-fralle/"
+        }
+      ],
+      "tech": [
+        "TypeScript",
+        "React"
+      ]
+    }
+  ]
+}

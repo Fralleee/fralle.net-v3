@@ -8,8 +8,8 @@ export default function Project({ project }: { project: Project }) {
       <Image
         src={project.image}
         alt={project.title}
-        width={256}
-        height={256}
+        width={96}
+        height={96}
         className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/20 sm:order-1 sm:col-span-2 sm:translate-y-1"
       />
       <div className="z-10 sm:col-span-6 order-2">
