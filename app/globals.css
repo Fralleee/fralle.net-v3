@@ -66,6 +66,16 @@
   }
 }
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
 .active .nav-indicator {
   width: 4rem;
   --tw-bg-opacity: 1;
@@ -75,14 +85,4 @@
 .active .nav-text {
   --tw-text-opacity: 1;
   color: rgb(226 232 240/var(--tw-text-opacity));
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
 }
