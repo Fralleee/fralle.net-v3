@@ -3,9 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
 import Link from "next/link";
-import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { GoDownload } from "react-icons/go";
-import { Button } from "./ui/button";
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("about");
@@ -76,17 +75,17 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
-        <li className="mr-5 text-xs">
-          <Link className="block hover:text-slate-200" href={"https://github.com/Fralleee/"} target="_blank" rel="noreferrer">
+      <ul className="flex gap-3 items-center mt-4 lg:mt-0" aria-label="Social media">
+        <li>
+          <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://github.com/Fralleee/"} target="_blank" rel="noreferrer">
             <span className="sr-only">GitHub</span>
-            <FaGithub className="w-6 h-6" />
+            <FaGithub className="w-7 h-7" />
           </Link>
         </li>
-        <li className="mr-5 text-xs">
-          <Link className="block hover:text-slate-200" href={"https://www.linkedin.com/in/fralle/"} target="_blank" rel="noreferrer">
+        <li>
+          <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://www.linkedin.com/in/fralle/"} target="_blank" rel="noreferrer">
             <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="w-6 h-6" />
+            <FaLinkedin className="w-7 h-7" />
           </Link>
         </li>
       </ul>
