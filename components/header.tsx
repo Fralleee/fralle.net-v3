@@ -71,17 +71,17 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <ul className="flex gap-5 items-center mt-4" aria-label="Social media">
+      <ul className="flex gap-5 items-center mt-8" aria-label="Social media">
         <li>
           <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://github.com/Fralleee/"} target="_blank" rel="noreferrer">
             <span className="sr-only">GitHub</span>
-            <FaGithub className="w-7 h-7" />
+            <FaGithub className="w-6 h-6" />
           </Link>
         </li>
         <li>
           <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://www.linkedin.com/in/fralle/"} target="_blank" rel="noreferrer">
             <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="w-7 h-7" />
+            <FaLinkedin className="w-6 h-6" />
           </Link>
         </li>
       </ul>
