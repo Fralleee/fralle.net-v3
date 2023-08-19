@@ -61,7 +61,7 @@ export default function Header() {
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
         <p className="mt-4 max-w-xs leading-normal">A curious and dedicated programmer with diverse experience spanning multiple industries.</p>
-        <ResumeLink className="mt-8" />
+        <ResumeLink className="mt-4" />
 
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-8 w-max">
