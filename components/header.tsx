@@ -71,7 +71,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <ul className="flex gap-5 items-center mt-4 lg:mt-0" aria-label="Social media">
+      <ul className="flex gap-5 items-center mt-4" aria-label="Social media">
         <li>
           <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://github.com/Fralleee/"} target="_blank" rel="noreferrer">
             <span className="sr-only">GitHub</span>
