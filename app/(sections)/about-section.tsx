@@ -15,7 +15,7 @@ export default function AboutSection() {
           <TextLink href="https://stackoverflow.com/">world's most visited websites</TextLink>.
         </p>
         <p className="mb-4">
-          Now, I work at <TextLink href="https://nira.com/">Nira</TextLink>, where I focus on enhancing cloud document security systems for Google Drive and OneDrive.
+          Now, I work at <TextLink href="https://nira.com/">Nira</TextLink>, enhancing cloud document security systems for Google Drive and OneDrive.
         </p>
         <p className="mb-4">Outside of work, I devote most of my time to passion projects, either developing add-ons for programs I frequently use or creating games.</p>
       </div>

@@ -10,7 +10,7 @@ export default function Project({ project }: { project: Project }) {
         alt={project.title}
         width={96}
         height={96}
-        className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/20 sm:order-1 sm:col-span-2 sm:translate-y-1 mb-4 lg:mb-0"
+        className="rounded transition sm:order-1 sm:col-span-2 sm:translate-y-1 mb-4 lg:mb-0 contrast-75 group-hover:contrast-100"
       />
       <div className="z-10 sm:col-span-6 order-2">
         <h3 className="font-medium leading-snug text-slate-200 mb-2">
