@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Tracker() {
   const [gradientPosition, setGradientPosition] = useState({ x: 0, y: 0 });
-  const [colorScheme, setColorScheme] = useState(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const [colorScheme, setColorScheme] = useState(window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
   const handleMouseMove = (event: MouseEvent) => {
     setGradientPosition({
@@ -26,15 +26,11 @@ export default function Tracker() {
       setColorScheme(newColorScheme);
     };
 
-    if (window) {
-      const colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      colorSchemeQuery.addEventListener("change", handleColorSchemeChange);
-    }
+    const colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    colorSchemeQuery.addEventListener("change", handleColorSchemeChange);
 
     return () => {
-      if (colorSchemeQuery) {
-        colorSchemeQuery.removeEventListener("change", handleColorSchemeChange);
-      }
+      colorSchemeQuery.removeEventListener("change", handleColorSchemeChange);
     };
   }, []);
 
