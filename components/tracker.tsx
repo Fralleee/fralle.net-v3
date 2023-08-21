@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Tracker() {
   const [gradientPosition, setGradientPosition] = useState({ x: 0, y: 0 });
-  const [colorScheme, setColorScheme] = useState(window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const [colorScheme, setColorScheme] = useState("light");
 
   const handleMouseMove = (event: MouseEvent) => {
     setGradientPosition({
