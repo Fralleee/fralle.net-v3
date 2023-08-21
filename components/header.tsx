@@ -58,10 +58,10 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-stone-800 dark:text-slate-200 sm:text-5xl">
           <a href="/">Roland Chelwing</a>
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-stone-800 dark:text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
         <p className="mt-4 max-w-xs leading-normal">A curious and dedicated programmer with diverse experience spanning multiple industries.</p>
         <ResumeLink className="mt-4" />
 
@@ -75,13 +75,21 @@ export default function Header() {
       </div>
       <ul className="flex gap-5 items-center mt-8" aria-label="Social media">
         <li>
-          <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://github.com/Fralleee/"} target="_blank" rel="noreferrer">
+          <Link
+            className="text-stone-400 dark:text-slate-500 hover:text-stone-900 dark:hover:text-slate-200 hover:scale-110 transition-all"
+            href={"https://github.com/Fralleee/"}
+            target="_blank"
+            rel="noreferrer">
             <span className="sr-only">GitHub</span>
             <FaGithub className="w-6 h-6" />
           </Link>
         </li>
         <li>
-          <Link className="hover:text-slate-200 hover:scale-110 transition-all" href={"https://www.linkedin.com/in/fralle/"} target="_blank" rel="noreferrer">
+          <Link
+            className="text-stone-400 dark:text-slate-500 hover:text-stone-900 dark:hover:text-slate-200 hover:scale-110 transition-all"
+            href={"https://www.linkedin.com/in/fralle/"}
+            target="_blank"
+            rel="noreferrer">
             <span className="sr-only">LinkedIn</span>
             <FaLinkedin className="w-6 h-6" />
           </Link>

@@ -14,7 +14,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={cn("scroll-smooth", inter.className)}>
-      <body suppressHydrationWarning={true} className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+      <body
+        suppressHydrationWarning={true}
+        className="bg-stone-100 text-stone-700 dark:bg-slate-900 dark:text-slate-400 leading-relaxed antialiased 
+        selection:bg-pink-300
+        dark:selection:bg-teal-300 dark:selection:text-teal-900
+        ">
         <Tracker />
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">{children}</div>
       </body>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Card from "./card";
 import { GoArrowUpRight, GoLink } from "react-icons/go";
+import TechList from "./tech-list";
 
 export default function Project({ project }: { project: Project }) {
   return (
@@ -13,9 +14,11 @@ export default function Project({ project }: { project: Project }) {
         className="rounded transition sm:order-1 sm:col-span-2 sm:translate-y-1 mb-4 lg:mb-0 contrast-75 group-hover:contrast-100"
       />
       <div className="z-10 sm:col-span-6 order-2">
-        <h3 className="font-medium leading-snug text-slate-200 mb-2">
+        <h3 className="font-medium leading-snug mb-2">
           <a
-            className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+            className="inline-flex items-baseline font-medium leading-tight group/link text-base 
+            text-stone-800 hover:text-pink-600 focus-visible:text-pink-600 
+            dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
             href={project.url}
             target="_blank"
             rel="noreferrer"
@@ -32,7 +35,10 @@ export default function Project({ project }: { project: Project }) {
           {project.links.map(link => (
             <li key={link.title}>
               <a
-                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300 pr-4"
+                className="relative mt-2 inline-flex items-center text-sm font-medium pr-4 
+                text-stone-700 hover:text-pink-600 focus-visible:text-pink-600
+                dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300
+                "
                 href={link.href}
                 title={link.title}
                 target="_blank"
@@ -43,13 +49,7 @@ export default function Project({ project }: { project: Project }) {
             </li>
           ))}
         </ul>
-        <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-          {project.tech.map(tech => (
-            <li key={tech} className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">{tech}</div>
-            </li>
-          ))}
-        </ul>
+        <TechList techs={project.tech} />
       </div>
     </Card>
   );
