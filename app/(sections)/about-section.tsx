@@ -6,8 +6,8 @@ export default function AboutSection() {
     <Section id="about" label="About me" title="About">
       <div>
         <p className="mb-4">
-          I started programming at the age of 7, creating text-based RPGs with my older brother on an ancient PASCAL computer. Computers and technology have always fascinated me,
-          but it wasn't until many years later that I turned my passion into a profession.
+          I started programming at the age of seven, creating text-based RPGs with my older brother on an ancient PASCAL computer. Computers and technology have always fascinated
+          me, but it wasn't until many years later that I turned my passion into a profession.
         </p>
         <p className="mb-4">
           Since then, I've had the privilege of working at a <TextLink href="https://www.aptic.net/">fintech company</TextLink>, an{" "}
