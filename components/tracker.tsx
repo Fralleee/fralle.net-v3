@@ -26,11 +26,15 @@ export default function Tracker() {
       setColorScheme(newColorScheme);
     };
 
-    const colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    colorSchemeQuery.addEventListener("change", handleColorSchemeChange);
+    if (window) {
+      const colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      colorSchemeQuery.addEventListener("change", handleColorSchemeChange);
+    }
 
     return () => {
-      colorSchemeQuery.removeEventListener("change", handleColorSchemeChange);
+      if (colorSchemeQuery) {
+        colorSchemeQuery.removeEventListener("change", handleColorSchemeChange);
+      }
     };
   }, []);
 
