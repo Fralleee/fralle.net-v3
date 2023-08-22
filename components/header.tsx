@@ -78,7 +78,7 @@ export default function Header() {
           <Link
             className="transition-all hover:scale-110
             text-slate-400 hover:text-blue-500 focus-visible:text-blue-500
-            dark:text-slate-500 dark:hover:text-amber-300 dark:focus-visible:text-amber-300"
+            dark:text-slate-500 dark:hover:text-amber-200 dark:focus-visible:text-amber-200"
             href={"https://github.com/Fralleee/"}
             target="_blank"
             rel="noreferrer">
@@ -90,7 +90,7 @@ export default function Header() {
           <Link
             className="transition-all hover:scale-110
                         text-slate-400 hover:text-blue-500 focus-visible:text-blue-500
-                        dark:text-slate-500 dark:hover:text-amber-300 dark:focus-visible:text-amber-300"
+                        dark:text-slate-500 dark:hover:text-amber-200 dark:focus-visible:text-amber-200"
             href={"https://www.linkedin.com/in/fralle/"}
             target="_blank"
             rel="noreferrer">
