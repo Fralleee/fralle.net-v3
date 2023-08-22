@@ -5,8 +5,8 @@ export default function TechList({ techs }: { techs: string[] }) {
         <li key={tech} className="mr-1.5 mt-2">
           <div
             className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5
-              bg-pink-700/10 text-pink-800 
-              dark:bg-teal-400/10  dark:text-teal-300">
+              bg-blue-500/10 text-blue-500 
+              dark:bg-sky-400/10  dark:text-sky-300">
             {tech}
           </div>
         </li>

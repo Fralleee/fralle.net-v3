@@ -58,10 +58,10 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-stone-800 dark:text-slate-200 sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-200 sm:text-5xl">
           <a href="/">Roland Chelwing</a>
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-stone-800 dark:text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-800 dark:text-slate-200 sm:text-xl">Senior Software Engineer at Nira</h2>
         <p className="mt-4 max-w-xs leading-normal">A curious and dedicated programmer with diverse experience spanning multiple industries.</p>
         <ResumeLink className="mt-4" />
 
@@ -76,7 +76,9 @@ export default function Header() {
       <ul className="flex gap-5 items-center mt-8" aria-label="Social media">
         <li>
           <Link
-            className="text-stone-400 dark:text-slate-500 hover:text-stone-900 dark:hover:text-slate-200 hover:scale-110 transition-all"
+            className="transition-all hover:scale-110
+            text-slate-400 hover:text-blue-500 focus-visible:text-blue-500
+            dark:text-slate-500 dark:hover:text-amber-200 dark:focus-visible:text-amber-200"
             href={"https://github.com/Fralleee/"}
             target="_blank"
             rel="noreferrer">
@@ -86,7 +88,9 @@ export default function Header() {
         </li>
         <li>
           <Link
-            className="text-stone-400 dark:text-slate-500 hover:text-stone-900 dark:hover:text-slate-200 hover:scale-110 transition-all"
+            className="transition-all hover:scale-110
+                        text-slate-400 hover:text-blue-500 focus-visible:text-blue-500
+                        dark:text-slate-500 dark:hover:text-amber-200 dark:focus-visible:text-amber-200"
             href={"https://www.linkedin.com/in/fralle/"}
             target="_blank"
             rel="noreferrer">

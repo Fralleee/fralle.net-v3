@@ -15,14 +15,14 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
         <span
           className="nav-indicator mr-4 h-px w-8 transition-all group-hover:w-16  group-focus-visible:w-16 motion-reduce:transition-none
           
-        bg-stone-300 group-hover:bg-stone-800 group-focus-visible:bg-stone-800
-        dark:bg-slate-600 dark:group-hover:bg-slate-200 dark:group-focus-visible:bg-slate-200
+        bg-slate-300 group-hover:bg-blue-500 group-focus-visible:bg-blue-500
+        dark:bg-slate-600 dark:group-hover:bg-amber-300 dark:group-focus-visible:bg-amber-300
          "
         />
         <span
           className="nav-text text-xs font-bold uppercase tracking-widest 
-        text-stone-400 group-hover:text-stone-800 group-focus-visible:text-stone-800
-        dark:text-slate-500 dark:group-hover:text-slate-200 dark:group-focus-visible:text-slate-200
+        text-slate-400 group-hover:text-blue-500 group-focus-visible:text-blue-500
+        dark:text-slate-500 dark:group-hover:text-amber-300 dark:group-focus-visible:text-amber-300
         ">
           {title}
         </span>

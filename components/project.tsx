@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Card from "./card";
-import { GoArrowUpRight, GoLink } from "react-icons/go";
+import { GoArrowRight, GoLink } from "react-icons/go";
 import TechList from "./tech-list";
 
 export default function Project({ project }: { project: Project }) {
@@ -17,8 +17,8 @@ export default function Project({ project }: { project: Project }) {
         <h3 className="font-medium leading-snug mb-2">
           <a
             className="inline-flex items-baseline font-medium leading-tight group/link text-base 
-            text-stone-800 hover:text-pink-600 focus-visible:text-pink-600 
-            dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
+            text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 
+            dark:text-slate-200 dark:hover:text-amber-300 dark:focus-visible:text-amber-300"
             href={project.url}
             target="_blank"
             rel="noreferrer"
@@ -26,7 +26,7 @@ export default function Project({ project }: { project: Project }) {
             <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
             <span>{project.title}</span>
             <span className="inline-block">
-              <GoArrowUpRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" />
+              <GoArrowRight className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 -translate-y-px" />
             </span>
           </a>
         </h3>
@@ -36,8 +36,8 @@ export default function Project({ project }: { project: Project }) {
             <li key={link.title}>
               <a
                 className="relative mt-2 inline-flex items-center text-sm font-medium pr-4 
-                text-stone-700 hover:text-pink-600 focus-visible:text-pink-600
-                dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300
+                text-slate-700 hover:text-blue-500 focus-visible:text-blue-500
+                dark:text-slate-300 dark:hover:text-amber-300 dark:focus-visible:text-amber-300
                 "
                 href={link.href}
                 title={link.title}

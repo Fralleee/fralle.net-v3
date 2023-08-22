@@ -5,8 +5,8 @@ export default function TextLink({ href, children }: { href: string; children: R
   return (
     <Link
       className="font-medium 
-        text-stone-800 hover:text-pink-600 focus-visible:text-pink-600
-        dark:text-slate-200 dark:hover:text-teal-300 dark:focus-visible:text-teal-300        
+        text-slate-800 hover:text-blue-500 focus-visible:text-blue-500
+        dark:text-slate-200 dark:hover:text-amber-400 dark:focus-visible:text-amber-400
         "
       href={href}
       target="_blank"
