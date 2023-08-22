@@ -1,7 +1,7 @@
 import Header from "@/components/header";
-import About from "./(sections)/about-section";
-import Experience from "./(sections)/experience-section";
-import Projects from "./(sections)/projects-section";
+import About from "./_sections/about-section";
+import Experience from "./_sections/experience-section";
+import Projects from "./_sections/projects-section";
 
 export default function Home() {
   return (

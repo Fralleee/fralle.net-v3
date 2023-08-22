@@ -16,7 +16,7 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
           className="nav-indicator mr-4 h-px w-8 transition-all group-hover:w-16  group-focus-visible:w-16 motion-reduce:transition-none
           
         bg-slate-300 group-hover:bg-blue-500 group-focus-visible:bg-blue-500
-        dark:bg-slate-600 dark:group-hover:bg-amber-300 dark:group-focus-visible:bg-amber-300
+        dark:bg-slate-500 dark:group-hover:bg-amber-300 dark:group-focus-visible:bg-amber-300
          "
         />
         <span

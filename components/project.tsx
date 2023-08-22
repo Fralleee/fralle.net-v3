@@ -40,7 +40,6 @@ export default function Project({ project }: { project: Project }) {
                 dark:text-slate-300 dark:hover:text-amber-300 dark:focus-visible:text-amber-300
                 "
                 href={link.href}
-                title={link.title}
                 target="_blank"
                 rel="noreferrer">
                 <GoLink className="mr-1 h-3 w-3" />
