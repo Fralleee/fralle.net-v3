@@ -75,28 +75,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-
-/* .active .nav-indicator {
-  width: 4rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 23 15/var(--tw-bg-opacity));
-}
-
-.active .nav-text {
-  --tw-text-opacity: 1;
-  color: rgb(29 23 15/var(--tw-text-opacity));
-} */
-/* 
-@media (prefers-color-scheme: dark) {
-  .active .nav-indicator {
-    width: 4rem;
-    --tw-bg-opacity: 1;
-    background-color: rgb(226 232 240/var(--tw-bg-opacity));
-  }
-
-  .active .nav-text {
-    --tw-text-opacity: 1;
-    color: rgb(226 232 240/var(--tw-text-opacity));
-  }
-} */

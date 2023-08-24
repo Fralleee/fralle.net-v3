@@ -5,11 +5,11 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import GoogleAnalytics from "@/components/google-analytics";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Roland Chelwing - Fralle",
-  description: "Roland Chelwing, a curious and dedicated programmer with diverse experience spanning multiple industries.",
+  title: "Roland Chelwing | Fralle",
+  description: "Roland Chelwing, a professional curious and dedicated software engineer with diverse experience spanning multiple industries.",
   icons: {
     icon: "/icon.svg",
   },
