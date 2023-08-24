@@ -10,7 +10,7 @@ interface NavLinkProps {
 export default function NavLink({ link, title, active, onClick }: NavLinkProps) {
   const activeClass = active ? "active" : "";
   return (
-    <li className="mt-2">
+    <li className="mt-4">
       <a className={cn("group flex items-center h-8", activeClass)} href={link} onClick={onClick}>
         <span
           className={cn(

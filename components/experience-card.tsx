@@ -5,7 +5,7 @@ import TechList from "./tech-list";
 export default function Experience({ experience }: { experience: Experience }) {
   return (
     <Card>
-      <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2" aria-label="2018 to Present">
+      <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2" aria-label={experience.duration}>
         {experience.duration}
       </header>
       <div className="z-10 sm:col-span-6">
