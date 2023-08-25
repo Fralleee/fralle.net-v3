@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Tracker() {
   const [gradientPosition, setGradientPosition] = useState({ x: 0, y: 0 });
-  const [colorScheme, setColorScheme] = useState("light");
+  const [colorScheme, setColorScheme] = useState("none");
 
   const handleMouseMove = (event: MouseEvent) => {
     setGradientPosition({
@@ -41,12 +41,13 @@ export default function Tracker() {
   const darkColor = "rgba(29 78 216 / 0.15)";
   const lightColor = "rgb(250 252 254)";
   const trackerColor = colorScheme === "dark" ? darkColor : lightColor;
-  return (
+  const useTracker = colorScheme !== "none";
+  return useTracker ? (
     <div
       className="pointer-events-none fixed inset-0 -z-10 transition duration-300 hidden lg:block"
       style={{
         background: `radial-gradient(600px at ${gradientPosition.x}px ${gradientPosition.y}px, ${trackerColor}, transparent 80%)`,
       }}
     />
-  );
+  ) : null;
 }
