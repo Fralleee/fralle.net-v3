@@ -12,7 +12,7 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
   return (
     <li className="mt-4">
       <a className={cn("group relative flex items-center h-8 w-48", activeClass)} href={link} onClick={onClick}>
-        <span
+        <div
           className={cn(
             `rounded transition-all motion-reduce:transition-none
             absolute inset-0 w-2 -z-10
@@ -26,14 +26,14 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
             active && "dark:bg-slate-800"
           )}
         />
-        <span
+        <div
           className="nav-text text-xs font-bold uppercase tracking-widest transition-all motion-reduce:transition-none ml-6
 
         group-hover:ml-8 group-focus-visible:ml-8
         text-slate-700 group-hover:text-blue-200 group-focus-visible:text-blue-200
-        dark:text-slate-300 dark:group-hover:text-slate-700 dark:group-focus-visible:text-slate-700">
+        dark:text-slate-300 dark:group-hover:text-slate-800 dark:group-focus-visible:text-slate-800">
           {title}
-        </span>
+        </div>
       </a>
     </li>
   );
