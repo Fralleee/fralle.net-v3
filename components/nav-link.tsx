@@ -30,7 +30,7 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
           className="nav-text text-xs font-bold uppercase tracking-widest transition-all motion-reduce:transition-none ml-6
 
         group-hover:ml-8 group-focus-visible:ml-8
-        text-slate-700 group-hover:text-blue-200 group-focus-visible:text-blue-200
+        text-slate-700 group-hover:text-blue-50 group-focus-visible:text-blue-50
         dark:text-slate-300 dark:group-hover:text-slate-800 dark:group-focus-visible:text-slate-800">
           {title}
         </div>

@@ -38,13 +38,15 @@ export default function Tracker() {
     };
   }, []);
 
-  const useTracker = colorScheme === "dark";
-  return useTracker ? (
+  const darkColor = "rgba(29 78 216 / 0.15)";
+  const lightColor = "rgb(250 252 254)";
+  const trackerColor = colorScheme === "dark" ? darkColor : lightColor;
+  return (
     <div
       className="pointer-events-none fixed inset-0 -z-10 transition duration-300 hidden lg:block"
       style={{
-        background: `radial-gradient(600px at ${gradientPosition.x}px ${gradientPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        background: `radial-gradient(600px at ${gradientPosition.x}px ${gradientPosition.y}px, ${trackerColor}, transparent 80%)`,
       }}
     />
-  ) : null;
+  );
 }
