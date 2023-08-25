@@ -6,7 +6,7 @@ export default function Card({ children }: { children: React.ReactNode }) {
       lg:group-hover:bg-slate-50 
       lg:group-hover:drop-shadow-[0_0_1px_rgba(0,0,0,0.15)]
 
-      dark:lg:group-hover:bg-slate-950 
+      dark:lg:group-hover:bg-slate-900 
       dark:lg:group-hover:shadow-[inset_0_-1px_0_0_rgba(148,163,184,0.2)] 
       
       "></div>
