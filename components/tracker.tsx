@@ -44,7 +44,7 @@ export default function Tracker() {
   const useTracker = colorScheme !== "none";
   return useTracker ? (
     <div
-      className="pointer-events-none fixed inset-0 -z-10 transition duration-300 hidden lg:block"
+      className="pointer-events-none fixed inset-0 -z-10 hidden transition duration-300 lg:block"
       style={{
         background: `radial-gradient(600px at ${gradientPosition.x}px ${gradientPosition.y}px, ${trackerColor}, transparent 80%)`,
       }}

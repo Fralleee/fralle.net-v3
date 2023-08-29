@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-export default function TextLink({ href, children }: { href: string; children: React.ReactNode }) {
+export default function TextLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
     <Link
       className="font-medium 
@@ -10,7 +16,8 @@ export default function TextLink({ href, children }: { href: string; children: R
         "
       href={href}
       target="_blank"
-      rel="noreferrer">
+      rel="noreferrer"
+    >
       {children}
     </Link>
   );
