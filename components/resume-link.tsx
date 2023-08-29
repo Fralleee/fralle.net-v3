@@ -6,7 +6,7 @@ export default function ResumeLink({ className }: { className?: string }) {
   return (
     <Link
       className={cn(
-        "group flex max-w-[170px] align-baseline font-medium text-slate-700 underline-offset-4 hover:text-blue-500 hover:underline focus-visible:text-blue-500 dark:text-slate-200 dark:hover:text-amber-300 dark:focus-visible:text-amber-300",
+        "group flex max-w-[170px] align-baseline font-medium text-slate-200 underline-offset-4 hover:text-amber-300 hover:underline focus-visible:text-amber-300",
         className,
       )}
       href="https://drive.google.com/uc?id=1hLQ18Bx3CMGYoTt85Ou1hSmCXv-AtAGM&export=download"

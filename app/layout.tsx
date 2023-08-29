@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://fralle.net"),
   title: "Roland Chelwing | Fralle",
-  description: "Roland Chelwing, a professional curious and dedicated software engineer with diverse experience spanning multiple industries.",
+  description:
+    "Roland Chelwing, a professional curious and dedicated software engineer with diverse experience spanning multiple industries.",
   keywords: [
     "software engineer",
     "senior",
@@ -53,18 +54,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={cn("scroll-smooth", inter.className)}>
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body
         suppressHydrationWarning={true}
-        className="bg-slate-100 text-slate-700 dark:bg-slate-900 dark:text-slate-400 leading-relaxed antialiased 
-        selection:bg-blue-200 selection:text-blue-900
-        dark:selection:bg-amber-300 dark:selection:text-amber-900
-        ">
+        className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-amber-300 selection:text-amber-900"
+      >
         <Tracker />
-        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">{children}</div>
+        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+          {children}
+        </div>
       </body>
     </html>
   );

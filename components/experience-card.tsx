@@ -6,7 +6,7 @@ export default function Experience({ experience }: { experience: Experience }) {
   return (
     <Card>
       <header
-        className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2"
+        className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
         aria-label={experience.duration}
       >
         {experience.duration}
@@ -14,9 +14,7 @@ export default function Experience({ experience }: { experience: Experience }) {
       <div className="z-10 sm:col-span-6">
         <h3 className="mb-2 font-medium leading-snug">
           <a
-            className="group/link inline-flex items-baseline text-base font-medium leading-tight
-            text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 
-            dark:text-slate-200 dark:hover:text-amber-300 dark:focus-visible:text-amber-300"
+            className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-amber-300 focus-visible:text-amber-300"
             href={experience.company.url}
             target="_blank"
             rel="noreferrer"
@@ -30,7 +28,7 @@ export default function Experience({ experience }: { experience: Experience }) {
               <GoArrowRight className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
             </span>
           </a>
-          <div className="mt-px flex items-center text-sm text-slate-500 dark:text-slate-500">
+          <div className="mt-px flex items-center text-sm text-slate-500">
             <GoLocation className="mr-1 h-4 w-4" />
             {experience.company.location}
           </div>

@@ -16,9 +16,7 @@ export default function Project({ project }: { project: Project }) {
       <div className="z-10 order-2 sm:col-span-6">
         <h3 className="mb-2 font-medium leading-snug">
           <a
-            className="group/link inline-flex items-baseline text-base font-medium leading-tight 
-            text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 
-            dark:text-slate-200 dark:hover:text-amber-300 dark:focus-visible:text-amber-300"
+            className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-amber-300 focus-visible:text-amber-300"
             href={project.url}
             target="_blank"
             rel="noreferrer"
@@ -36,9 +34,7 @@ export default function Project({ project }: { project: Project }) {
           {project.links.map((link) => (
             <li key={link.title}>
               <a
-                className="relative mt-2 inline-flex items-center pr-4 text-sm font-medium 
-                text-slate-700 hover:text-blue-500 focus-visible:text-blue-500
-                dark:text-slate-300 dark:hover:text-amber-300 dark:focus-visible:text-amber-300
+                className="relative mt-2 inline-flex items-center pr-4 text-sm font-medium text-slate-300 hover:text-amber-300 focus-visible:text-amber-300
                 "
                 href={link.href}
                 target="_blank"
