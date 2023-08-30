@@ -5,6 +5,7 @@ import NavLink from "./nav-link";
 import Link from "next/link";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ResumeLink from "./resume-link";
+import IconLink from "./icon-link";
 
 const extraScrollPaddingProjects = 100;
 
@@ -98,28 +99,20 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <ul className="mt-8 flex items-center gap-5" aria-label="Social media">
+      <ul className="mt-8 flex items-center gap-6" aria-label="Social media">
         <li>
-          <Link
-            className="text-slate-500 transition-all hover:text-slate-200 focus-visible:text-slate-200"
-            href={"https://github.com/Fralleee/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="sr-only">GitHub</span>
-            <FaGithub className="h-6 w-6" />
-          </Link>
+          <IconLink
+            href="https://github.com/Fralleee/"
+            title="GitHub"
+            icon={FaGithub}
+          />
         </li>
         <li>
-          <Link
-            className="text-slate-500 transition-all hover:text-slate-200 focus-visible:text-slate-200"
-            href={"https://www.linkedin.com/in/fralle/"}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span className="sr-only">LinkedIn</span>
-            <FaLinkedin className="h-6 w-6" />
-          </Link>
+          <IconLink
+            href="https://www.linkedin.com/in/fralle/"
+            title="LinkedIn"
+            icon={FaLinkedin}
+          />
         </li>
       </ul>
     </header>
