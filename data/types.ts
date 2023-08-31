@@ -5,6 +5,7 @@ interface Experience {
     url: string;
     location: string;
   };
+  iconSrc: string;
   duration: string;
   details: string;
   tech: string[];

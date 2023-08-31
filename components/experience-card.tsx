@@ -1,15 +1,23 @@
 import Card from "./card";
 import { GoArrowRight, GoLocation } from "react-icons/go";
 import TechList from "./tech-list";
+import Image from "next/image";
 
 export default function Experience({ experience }: { experience: Experience }) {
   return (
     <Card>
       <header
-        className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+        className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 lg:text-center"
         aria-label={experience.duration}
       >
         {experience.duration}
+        <Image
+          src={experience.iconSrc}
+          alt={experience.title}
+          width={64}
+          height={64}
+          className="my-4 h-16 w-16  transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:translate-y-1 lg:mx-auto lg:mb-0 lg:opacity-50 lg:contrast-75"
+        />
       </header>
       <div className="z-10 sm:col-span-6">
         <h3 className="mb-2 font-medium leading-snug">

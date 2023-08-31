@@ -11,7 +11,7 @@ export default function Project({ project }: { project: Project }) {
         alt={project.title}
         width={96}
         height={96}
-        className="mb-4 rounded contrast-75 transition group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:translate-y-1 lg:mb-0"
+        className="mb-4 rounded transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:translate-y-1 lg:mb-0 lg:opacity-50 lg:contrast-75"
       />
       <div className="z-10 order-2 sm:col-span-6">
         <h3 className="mb-2 font-medium leading-snug">

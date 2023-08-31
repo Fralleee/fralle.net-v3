@@ -1,6 +1,6 @@
 import projectsData from "@/data/projectsData.json";
 import Section from "@/components/section";
-import Project from "@/components/project";
+import Project from "@/components/project-card";
 
 export default function ProjectsSection() {
   const projects: Projects = projectsData;

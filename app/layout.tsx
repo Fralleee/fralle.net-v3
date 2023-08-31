@@ -64,7 +64,8 @@ export default function RootLayout({
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body
         suppressHydrationWarning={true}
-        className="bg-slate-800 leading-relaxed text-slate-400 antialiased selection:bg-amber-300 selection:text-amber-900"
+        className="bg-slate-800 leading-relaxed text-slate-400 antialiased selection:bg-amber-300 selection:text-amber-900
+        "
       >
         <Tracker />
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">

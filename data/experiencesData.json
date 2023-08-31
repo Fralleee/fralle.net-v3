@@ -7,6 +7,7 @@
         "url": "https://www.nira.com/",
         "location": "California, US (Remote)"
       },
+      "iconSrc": "/logos/nira.svg",
       "duration": "2023 — Present",
       "details": "Developing authorization components for Google Drive and OneDrive.",
       "tech": [
@@ -24,6 +25,7 @@
         "url": "https://www.stackoverflow.com/",
         "location": "New York, US (Remote)"
       },
+      "iconSrc": "/logos/stackoverflow.svg",
       "duration": "2022 — 2023",
       "details": "Part of the Awareness team, primarily involved in optimizing ads and metrics to improve click-through rates, automation, and impressions.",
       "tech": [
@@ -43,6 +45,7 @@
         "url": "https://www.yubico.com/",
         "location": "California, US (Remote)"
       },
+      "iconSrc": "/logos/yubico.svg",
       "duration": "April — Oct 2022",
       "details": "Responsible for maintaining an e-commerce website built on React and overseeing the migration of its functionality to a new Svelte-based application.",
       "tech": [
@@ -62,6 +65,7 @@
         "url": "https://www.gamesysgroup.com/",
         "location": "Skövde, Sweden (Hybrid)"
       },
+      "iconSrc": "/logos/gamesys.svg",
       "duration": "2020 — 2022",
       "details": "Developed payment APIs and mocking solutions for the online gambling platform.",
       "tech": [
@@ -79,6 +83,7 @@
         "url": "https://www.aptic.net/",
         "location": "Skövde, Sweden (Hybrid)"
       },
+      "iconSrc": "/logos/asitis.svg",
       "duration": "2015 — 2020",
       "details": "Served as a front-end development team leader for a cloud-based project called Cloudware.",
       "tech": [

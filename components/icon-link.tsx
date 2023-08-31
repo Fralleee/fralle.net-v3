@@ -16,8 +16,8 @@ const IconLink = ({ href, title, icon: Icon }: Props) => {
       rel="noreferrer"
     >
       <span className="sr-only">{title}</span>
-      <span className="-z-12 absolute -left-3 -top-3 h-12 w-12 scale-0 rounded-full bg-slate-200/10 transition-transform group-hover:scale-100" />
-      <Icon className="h-6 w-6" />
+      <span className="-z-12 absolute -left-3 -top-3 h-12 w-12 scale-0 rounded-full bg-slate-900 transition-transform group-hover:scale-100" />
+      <Icon className="relative h-6 w-6" />
     </Link>
   );
 };

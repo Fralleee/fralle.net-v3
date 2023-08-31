@@ -100,11 +100,9 @@
 }
 
 .direction-aware>li:hover+li::after {
-  background-color: red;
   transform: translateY(-100%);
 }
 
 .direction-aware>li:has(+ :hover)::after {
-  background-color: blue;
   transform: translateY(100%);
 }
