@@ -1,37 +1,30 @@
 {
-  "data": [
-    {
-      "title": "SwiftPaste",
-      "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
-      "image": "/swiftpaste.png",
-      "details": "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
-      "links": [
+    "data": [
         {
-          "title": "Code",
-          "href": "https://github.com/Fralleee/SwiftPaste/"
-        }
-      ],
-      "tech": [
-        "TypeScript",
-        "Chrome API",
-        "React"
-      ]
-    },
-    {
-      "title": "Cooking with Fralle",
-      "url": "https://cooking.fralle.net/",
-      "image": "/cooking-with-fralle.png",
-      "details": "Your go-to recipe app for all your favorite dishes. Easily adjust portions and ingredients on the fly, and explore a wide range of recipes, from mouth-watering pizzas and fluffy muffins to refreshing drinks.",
-      "links": [
+            "title": "SwiftPaste",
+            "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
+            "image": "/swiftpaste.png",
+            "details": "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
+            "links": [
+                {
+                    "title": "Code",
+                    "href": "https://github.com/Fralleee/SwiftPaste/"
+                }
+            ],
+            "tech": ["TypeScript", "Chrome API", "React"]
+        },
         {
-          "title": "Code",
-          "href": "https://github.com/Fralleee/cooking-with-fralle/"
+            "title": "Cooking with Fralle",
+            "url": "https://cooking.fralle.net/",
+            "image": "/cooking-with-fralle.png",
+            "details": "Your go-to recipe app for all your favorite dishes. Easily adjust portions and ingredients on the fly, and explore a wide range of recipes, from mouth-watering pizzas and fluffy muffins to refreshing drinks.",
+            "links": [
+                {
+                    "title": "Code",
+                    "href": "https://github.com/Fralleee/cooking-with-fralle/"
+                }
+            ],
+            "tech": ["TypeScript", "React"]
         }
-      ],
-      "tech": [
-        "TypeScript",
-        "React"
-      ]
-    }
-  ]
+    ]
 }

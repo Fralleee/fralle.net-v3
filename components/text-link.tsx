@@ -2,20 +2,20 @@ import Link from "next/link";
 import React from "react";
 
 export default function TextLink({
-  href,
-  children,
+    href,
+    children,
 }: {
-  href: string;
-  children: React.ReactNode;
+    href: string;
+    children: React.ReactNode;
 }) {
-  return (
-    <Link
-      className=" font-medium text-slate-200 hover:text-amber-400 hover:underline focus-visible:text-amber-400"
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {children}
-    </Link>
-  );
+    return (
+        <Link
+            className=" font-medium text-slate-200 hover:text-amber-400 hover:underline focus-visible:text-amber-400"
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+        >
+            {children}
+        </Link>
+    );
 }

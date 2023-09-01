@@ -2,8 +2,8 @@
 
 ## Head
 
-- Add meta properties
+-   Add meta properties
 
 ## Infrastructure
 
-- CI/CD
+-   CI/CD

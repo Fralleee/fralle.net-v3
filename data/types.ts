@@ -1,34 +1,34 @@
 interface Experience {
-  title: string;
-  company: {
-    name: string;
-    url: string;
-    location: string;
-  };
-  iconSrc: string;
-  duration: string;
-  details: string;
-  tech: string[];
+    title: string;
+    company: {
+        name: string;
+        url: string;
+        location: string;
+    };
+    iconSrc: string;
+    duration: string;
+    details: string;
+    tech: string[];
 }
 
 interface Experiences {
-  data: Experience[];
+    data: Experience[];
 }
 
 interface Link {
-  title: string;
-  href: string;
+    title: string;
+    href: string;
 }
 
 interface Project {
-  title: string;
-  url: string;
-  image: string;
-  details: string;
-  links: Link[];
-  tech: string[];
+    title: string;
+    url: string;
+    image: string;
+    details: string;
+    links: Link[];
+    tech: string[];
 }
 
 interface Projects {
-  data: Project[];
+    data: Project[];
 }
