@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import GoogleAnalytics from "@/components/google-analytics";
 import Tracker from "@/components/tracker";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://fralle.net"),
@@ -60,15 +60,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={cn("scroll-smooth", inter.className)}>
+        <html lang="en" className="scroll-smooth">
             <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
             <body
                 suppressHydrationWarning={true}
-                className="bg-slate-800 leading-relaxed text-slate-400 antialiased selection:bg-amber-300 selection:text-amber-900
-        "
+                className={cn(
+                    "bg-slate-800 leading-relaxed text-slate-400 antialiased selection:bg-amber-300 selection:text-amber-900",
+                    font.className,
+                )}
             >
                 <Tracker />
-                <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+                <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
                     {children}
                 </div>
             </body>

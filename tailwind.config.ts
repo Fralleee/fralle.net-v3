@@ -4,7 +4,6 @@ module.exports = {
         "./pages/**/*.{ts,tsx}",
         "./components/**/*.{ts,tsx}",
         "./app/**/*.{ts,tsx}",
-        "./src/**/*.{ts,tsx}",
     ],
     theme: {
         container: {
@@ -15,12 +14,6 @@ module.exports = {
             },
         },
         extend: {
-            fontFamily: {
-                sans: "Inter",
-            },
-            grayscale: {
-                50: "50%",
-            },
             colors: {
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
