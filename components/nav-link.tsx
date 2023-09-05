@@ -26,9 +26,9 @@ export default function NavLink({
             >
                 <div
                     className={cn(
-                        "absolute inset-0 -z-10 w-2 rounded bg-slate-500 transition-all group-hover:w-48  group-hover:bg-amber-300 group-focus-visible:w-48 group-focus-visible:bg-amber-300 motion-reduce:transition-none",
+                        "absolute inset-0 -z-10 w-2 rounded bg-slate-500/50 transition-all group-hover:w-48  group-hover:bg-amber-300 group-focus-visible:w-48 group-focus-visible:bg-amber-300 motion-reduce:transition-none",
                         active && "h-8 w-48",
-                        active && "bg-slate-700",
+                        active && "bg-slate-700/50",
                     )}
                 />
                 <div className="nav-text ml-6 text-xs font-bold uppercase tracking-widest text-slate-300 transition-all group-hover:ml-8 group-hover:text-slate-800 group-focus-visible:ml-8 group-focus-visible:text-slate-800 motion-reduce:transition-none">
