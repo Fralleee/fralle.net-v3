@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
-import Link from "next/link";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ResumeLink from "./resume-link";
 import IconLink from "./icon-link";
