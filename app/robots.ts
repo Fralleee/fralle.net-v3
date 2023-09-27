@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: "/",
             disallow: "/private/",
         },
-        sitemap: "https://fralle.net/sitemap.xml",
+        sitemap: "https://www.fralle.net/sitemap.xml",
     };
 }

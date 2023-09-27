@@ -9,7 +9,7 @@ import Tracker from "@/components/tracker";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://fralle.net"),
+    metadataBase: new URL("https://www.fralle.net"),
     title: "Roland Chelwing | Fralle",
     description:
         "Roland Chelwing, a professional curious and dedicated software engineer with diverse experience spanning multiple industries.",
