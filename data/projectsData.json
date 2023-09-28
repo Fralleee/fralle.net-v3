@@ -11,7 +11,11 @@
                     "href": "https://github.com/Fralleee/SwiftPaste/"
                 }
             ],
-            "tech": ["TypeScript", "Chrome API", "React"]
+            "tech": [
+                "TypeScript",
+                "Chrome API",
+                "React"
+            ]
         },
         {
             "title": "Cooking with Fralle",
@@ -24,7 +28,10 @@
                     "href": "https://github.com/Fralleee/cooking-with-fralle/"
                 }
             ],
-            "tech": ["TypeScript", "React"]
+            "tech": [
+                "TypeScript",
+                "NextJs"
+            ]
         }
     ]
 }
