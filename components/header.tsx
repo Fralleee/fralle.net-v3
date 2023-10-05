@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
 import ResumeLink from "./resume-link";
 import IconLink from "./icon-link";
 
@@ -73,7 +73,6 @@ export default function Header() {
                     A curious and dedicated programmer with diverse experience
                     spanning multiple industries.
                 </p>
-                <ResumeLink className="mt-4" />
 
                 <nav
                     className="nav hidden lg:block"
@@ -98,6 +97,12 @@ export default function Header() {
                             active={activeSection === "projects"}
                             onClick={handleNavLinkClick("projects")}
                         />
+                        <NavLink
+                            link="#articles"
+                            title="Articles"
+                            active={activeSection === "articles"}
+                            onClick={handleNavLinkClick("articles")}
+                        />
                     </ul>
                 </nav>
             </div>
@@ -117,6 +122,13 @@ export default function Header() {
                         href="https://www.linkedin.com/in/fralle/"
                         title="LinkedIn"
                         icon={FaLinkedin}
+                    />
+                </li>
+                <li>
+                    <IconLink
+                        href="https://medium.com/@roland.chelwing/"
+                        title="Medium"
+                        icon={FaMedium}
                     />
                 </li>
             </ul>

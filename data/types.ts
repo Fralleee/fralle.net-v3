@@ -32,3 +32,16 @@ interface Project {
 interface Projects {
     data: Project[];
 }
+
+interface Article {
+    title: string;
+    subtitle: string;
+    meta: string;
+    url: string;
+    image: string;
+    tags: string[];
+}
+
+interface Articles {
+    data: Article[];
+}

@@ -2,6 +2,8 @@ import Header from "@/components/header";
 import About from "./_sections/about-section";
 import Experience from "./_sections/experience-section";
 import Projects from "./_sections/projects-section";
+import Articles from "./_sections/articles-section";
+import ResumeLink from "@/components/resume-link";
 
 export default function Home() {
     return (
@@ -11,6 +13,7 @@ export default function Home() {
                 <About />
                 <Experience />
                 <Projects />
+                <Articles />
             </main>
         </div>
     );
