@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
 import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
-import ResumeLink from "./resume-link";
 import IconLink from "./icon-link";
 
+const extraScrollPaddingArticles = 250;
 const extraScrollPaddingProjects = 100;
 
 export default function Header() {
@@ -34,6 +34,7 @@ export default function Header() {
     useEffect(() => {
         const aboutSection = document.getElementById("about")!;
         const projectsSection = document.getElementById("projects")!;
+        const articlesSection = document.getElementById("articles")!;
 
         const handleScroll = () => {
             if (isAutoScrolling) {
@@ -44,6 +45,11 @@ export default function Header() {
 
             if (scrollY < aboutSection.offsetHeight / 2) {
                 setActiveSection("about");
+            } else if (
+                scrollY + extraScrollPaddingArticles + windowHeight / 2 >=
+                articlesSection.offsetTop
+            ) {
+                setActiveSection("articles");
             } else if (
                 scrollY + extraScrollPaddingProjects + windowHeight / 2 >=
                 projectsSection.offsetTop
