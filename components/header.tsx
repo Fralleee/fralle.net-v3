@@ -113,7 +113,7 @@ export default function Header() {
                 </nav>
             </div>
             <ul
-                className="mt-8 flex items-center gap-6"
+                className="mt-16 flex items-center gap-6"
                 aria-label="Social media"
             >
                 <li>

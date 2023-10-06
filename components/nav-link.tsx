@@ -15,7 +15,7 @@ export default function NavLink({
 }: NavLinkProps) {
     const activeClass = active ? "active" : "";
     return (
-        <li className="mt-4">
+        <li className="mt-2">
             <a
                 className={cn(
                     "group relative flex h-8 w-48 items-center",
