@@ -49,9 +49,6 @@ export const metadata: Metadata = {
         "back-end",
         "backend",
     ],
-    icons: {
-        icon: "/icon.svg",
-    },
 };
 
 export default function RootLayout({
