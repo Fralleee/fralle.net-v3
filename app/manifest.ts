@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
         description: "Roland Chelwing | Fralle",
         start_url: "/",
         display: "standalone",
-        background_color: "#101E3F",
-        theme_color: "#101E3F",
+        background_color: "#21293a",
+        theme_color: "#21293a",
         icons: [
             {
                 src: "/icons/icon-72x72.png",
