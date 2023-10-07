@@ -132,7 +132,7 @@ export default function Header() {
                 </li>
                 <li>
                     <IconLink
-                        href="https://medium.com/@roland.chelwing/"
+                        href="https://medium.com/@fralle/"
                         title="Medium"
                         icon={FaMedium}
                     />

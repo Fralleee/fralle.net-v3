@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import ExternalLink from "./external-link";
 
 export default function TextLink({
     href,
@@ -9,13 +9,11 @@ export default function TextLink({
     children: React.ReactNode;
 }) {
     return (
-        <Link
+        <ExternalLink
             className=" font-medium text-slate-200 hover:text-amber-400 hover:underline focus-visible:text-amber-400"
             href={href}
-            target="_blank"
-            rel="noreferrer"
         >
             {children}
-        </Link>
+        </ExternalLink>
     );
 }

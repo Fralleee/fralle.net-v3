@@ -2,6 +2,7 @@ import Card from "./card";
 import { GoArrowRight, GoLocation } from "react-icons/go";
 import TechList from "./tech-list";
 import Image from "next/image";
+import ExternalLink from "./external-link";
 
 export default function Experience({ experience }: { experience: Experience }) {
     return (
@@ -21,11 +22,9 @@ export default function Experience({ experience }: { experience: Experience }) {
             </header>
             <div className="z-10 sm:col-span-6">
                 <h3 className="mb-2 font-medium leading-snug">
-                    <a
+                    <ExternalLink
                         className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 hover:text-amber-300 focus-visible:text-amber-300"
                         href={experience.company.url}
-                        target="_blank"
-                        rel="noreferrer"
                         aria-label={`${experience.title} at ${experience.company.name}`}
                     >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
@@ -35,7 +34,7 @@ export default function Experience({ experience }: { experience: Experience }) {
                             {experience.company.name}
                             <GoArrowRight className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
                         </span>
-                    </a>
+                    </ExternalLink>
                     <div className="mt-px flex items-center text-sm text-slate-500">
                         <GoLocation className="mr-1 h-4 w-4" />
                         {experience.company.location}

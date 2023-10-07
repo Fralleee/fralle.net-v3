@@ -1,9 +1,9 @@
 {
     "data": [
         {
-            "title": "Harnessing OpenAPI to track and domesticate wild tRPC changes",
-            "subtitle": "Unmasking tRPC changes with OpenAPI’s unparalleled insight",
-            "url": "https://medium.com/@roland.chelwing/harnessing-openapi-to-track-and-domesticate-wild-trpc-changes-050b24b33a76",
+            "title": "Using OpenAPI to detect breaking changes in tRPC",
+            "subtitle": "Keep your API in check with OpenAPI and schema validation",
+            "url": "https://medium.com/@fralle/harnessing-openapi-to-track-and-domesticate-wild-trpc-changes-050b24b33a76",
             "image": "/trpc-article.webp",
             "meta": "Medium - 2023",
             "tags": ["API", "tRPC", "OpenAPI", "Automation"]
