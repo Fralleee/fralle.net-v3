@@ -9,8 +9,16 @@
             },
             "iconSrc": "/logos/nira.svg",
             "duration": "2023 — Present",
-            "details": "Developing authorization components for Google Drive and OneDrive.",
-            "tech": ["TypeScript", "React", "GraphQL", "ElasticSearch", "AWS"]
+            "details": "Helping companies take control over their documents, enhancing the transparency of both internal and external access to company records.",
+            "tech": [
+                "TypeScript",
+                "React",
+                "NextJs",
+                "tRPC",
+                "GraphQL",
+                "ElasticSearch",
+                "AWS"
+            ]
         },
         {
             "title": "Software Engineer",

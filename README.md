@@ -1,9 +1,3 @@
-# Todo
+# Fralle v3
 
-## Head
-
--   Add meta properties
-
-## Infrastructure
-
--   CI/CD
+Profile/portfolio page written in NextJs and TailwindCSS
