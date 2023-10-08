@@ -6,7 +6,7 @@ export default function ProjectsSection() {
     const articles: Articles = articlesData;
     return (
         <Section id="articles" label="Articles" title="Articles">
-            <ul className="group/list direction-aware">
+            <ul className="group/list direction-aware pb-16">
                 {articles.data.map((article) => (
                     <li
                         key={article.title}
