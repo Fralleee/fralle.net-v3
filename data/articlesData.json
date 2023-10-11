@@ -7,6 +7,14 @@
             "image": "/trpc-article.webp",
             "meta": "Medium - 2023",
             "tags": ["API", "tRPC", "OpenAPI", "Automation"]
+        },
+        {
+            "title": "Mocking tRPC Routes with Type Safety in TypeScript",
+            "subtitle": "Ensure your mocks always align with your original routes using advanced TypeScript patterns",
+            "url": "https://medium.com/@fralle/mocking-trpc-routes-with-type-safety-in-typescript-8b8dbc1281b2",
+            "image": "/mock-article.webp",
+            "meta": "Medium - 2023",
+            "tags": ["API", "tRPC", "Mock", "Testing", "TypeScript"]
         }
     ]
 }
