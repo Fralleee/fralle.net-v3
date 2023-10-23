@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
-import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMedium, FaDev } from "react-icons/fa";
 import IconLink from "./icon-link";
 
 const extraScrollPaddingArticles = 250;
@@ -135,6 +135,13 @@ export default function Header() {
                         href="https://medium.com/@fralle/"
                         title="Medium"
                         icon={FaMedium}
+                    />
+                </li>
+                <li>
+                    <IconLink
+                        href="https://dev.to/fralleee"
+                        title="Medium"
+                        icon={FaDev}
                     />
                 </li>
             </ul>
