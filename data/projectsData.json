@@ -1,6 +1,19 @@
 {
     "data": [
         {
+            "title": "Cooking with Fralle",
+            "url": "https://cooking.fralle.net/",
+            "image": "/cooking-with-fralle.png",
+            "details": "Your go-to recipe app for all your favorite dishes. Easily adjust portions and ingredients on the fly, and explore a wide range of recipes, from mouth-watering pizzas and fluffy muffins to refreshing drinks.",
+            "links": [
+                {
+                    "title": "Code",
+                    "href": "https://github.com/Fralleee/cooking-with-fralle-v2/"
+                }
+            ],
+            "tech": ["TypeScript", "NextJs"]
+        },
+        {
             "title": "SwiftPaste",
             "url": "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
             "image": "/swiftpaste.png",
@@ -14,17 +27,17 @@
             "tech": ["TypeScript", "Chrome API", "React"]
         },
         {
-            "title": "Cooking with Fralle",
-            "url": "https://cooking.fralle.net/",
-            "image": "/cooking-with-fralle.png",
-            "details": "Your go-to recipe app for all your favorite dishes. Easily adjust portions and ingredients on the fly, and explore a wide range of recipes, from mouth-watering pizzas and fluffy muffins to refreshing drinks.",
+            "title": "Disney+ Unblur",
+            "url": "https://chrome.google.com/webstore/detail/disney%20-unblur/epegomjmecdogfefcmadjkbinicbldmb/",
+            "image": "/disney+.png",
+            "details": "A Chrome extension that removes the blur overlay from Disney+ controls.",
             "links": [
                 {
                     "title": "Code",
-                    "href": "https://github.com/Fralleee/cooking-with-fralle-v2/"
+                    "href": "https://github.com/Fralleee/disneyplus-unblur/"
                 }
             ],
-            "tech": ["TypeScript", "NextJs"]
+            "tech": ["TypeScript", "Chrome API"]
         }
     ]
 }
