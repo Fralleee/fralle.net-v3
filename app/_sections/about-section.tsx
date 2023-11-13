@@ -1,6 +1,5 @@
 import TextLink from "@/components/text-link";
 import Section from "@/components/section";
-import ResumeLink from "@/components/resume-link";
 
 export default function AboutSection() {
     return (
@@ -44,7 +43,6 @@ export default function AboutSection() {
                     frequently use or creating games.
                 </p>
             </div>
-            <ResumeLink className="mt-8" />
         </Section>
     );
 }
