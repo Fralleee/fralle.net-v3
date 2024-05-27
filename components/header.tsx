@@ -73,7 +73,7 @@ export default function Header() {
                     <a href="/">Roland Chelwing</a>
                 </h1>
                 <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-                    RCG Consulting AB
+                    Fullstack Software Engineer
                 </h2>
                 <p className="mt-4 max-w-xs leading-normal">
                     A curious and dedicated programmer with diverse experience

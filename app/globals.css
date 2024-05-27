@@ -106,3 +106,19 @@
 .direction-aware > li:has(+ :hover)::after {
     transform: translateY(100%);
 }
+
+::-webkit-scrollbar {
+    /* Customize the scrollbar width */
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    /* Customize the scrollbar track */
+    background-color: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Customize the scrollbar thumb */
+    /* background-color: red; */
+    background-color: #334155;
+}

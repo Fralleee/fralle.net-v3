@@ -25,6 +25,10 @@ export default function AboutSection() {
                     <TextLink href="https://www.yubico.com/">
                         security company
                     </TextLink>
+                    , a{" "}
+                    <TextLink href="https://www.nira.com/">
+                        very innovative startup
+                    </TextLink>
                     , and one of the{" "}
                     <TextLink href="https://stackoverflow.com/">
                         world's most visited websites
@@ -32,15 +36,20 @@ export default function AboutSection() {
                     .
                 </p>
                 <p className="mb-4">
-                    Now, I work at{" "}
-                    <TextLink href="https://nira.com/">Nira</TextLink>,
-                    enhancing cloud document security systems for Google Drive
-                    and OneDrive.
+                    Currently seeking new opportunities, I am passionate about
+                    software development and am eager to bring my expertise to a
+                    new team.
                 </p>
                 <p className="mb-4">
-                    Outside of work, I devote most of my time to passion
-                    projects, either developing add-ons for programs I
-                    frequently use or creating games.
+                    Please feel free to contact me on{" "}
+                    <TextLink href="https://www.linkedin.com/in/fralle/">
+                        LinkedIn
+                    </TextLink>{" "}
+                    or via{" "}
+                    <TextLink href="mailto://roland.chelwing@gmail.com">
+                        email
+                    </TextLink>{" "}
+                    to discuss potential collaborations or job openings.
                 </p>
             </div>
         </Section>
