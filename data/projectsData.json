@@ -1,6 +1,19 @@
 {
     "data": [
         {
+            "title": "Polls",
+            "url": "https://poll.fralle.net/",
+            "image": "/polls.png",
+            "details": "Effortlessly create real-time polls and storypoint sessions. Perfect for making every group choice clear and simple!",
+            "links": [
+                {
+                    "title": "Code",
+                    "href": "https://github.com/Fralleee/voting-app/"
+                }
+            ],
+            "tech": ["TypeScript", "NextJs", "Firebase"]
+        },
+        {
             "title": "Cooking with Fralle",
             "url": "https://cooking.fralle.net/",
             "image": "/cooking-with-fralle.png",
