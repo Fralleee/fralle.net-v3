@@ -25,9 +25,9 @@ export default function AboutSection() {
                     <TextLink href="https://www.yubico.com/">
                         security company
                     </TextLink>
-                    , a{" "}
+                    , an{" "}
                     <TextLink href="https://www.nira.com/">
-                        very innovative startup
+                        innovative startup
                     </TextLink>
                     , and one of the{" "}
                     <TextLink href="https://stackoverflow.com/">
