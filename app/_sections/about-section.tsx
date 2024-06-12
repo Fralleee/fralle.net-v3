@@ -13,7 +13,8 @@ export default function AboutSection() {
                     passion into a profession.
                 </p>
                 <p className="mb-4">
-                    Since then, I've had the privilege of working at a{" "}
+                    Over the years, I have had the opportunity to work with a
+                    diverse range of organizations, including a{" "}
                     <TextLink href="https://www.aptic.net/">
                         fintech company
                     </TextLink>
@@ -25,13 +26,13 @@ export default function AboutSection() {
                     <TextLink href="https://www.yubico.com/">
                         security company
                     </TextLink>
-                    , an{" "}
+                    , a{" "}
                     <TextLink href="https://www.nira.com/">
-                        innovative startup
+                        highly innovative startup
                     </TextLink>
-                    , and one of the{" "}
+                    , and{" "}
                     <TextLink href="https://stackoverflow.com/">
-                        world's most visited websites
+                        one of the world’s most visited websites
                     </TextLink>
                     .
                 </p>
