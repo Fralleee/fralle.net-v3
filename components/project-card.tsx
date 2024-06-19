@@ -29,20 +29,25 @@ export default function Project({ project }: { project: Project }) {
                     </ExternalLink>
                 </h3>
                 <p className="mt-2 text-sm leading-normal">{project.details}</p>
-                <ul className="mt-2 flex flex-wrap" aria-label="Related links">
-                    {project.links.map((link) => (
-                        <li key={link.title}>
-                            <ExternalLink
-                                className="relative mt-2 inline-flex items-center pr-4 text-sm font-medium text-slate-300 hover:text-amber-300 focus-visible:text-amber-300
+                {project.links.length > 0 && (
+                    <ul
+                        className="mt-2 flex flex-wrap"
+                        aria-label="Related links"
+                    >
+                        {project.links.map((link) => (
+                            <li key={link.title}>
+                                <ExternalLink
+                                    className="relative mt-2 inline-flex items-center pr-4 text-sm font-medium text-slate-300 hover:text-amber-300 focus-visible:text-amber-300
                 "
-                                href={link.href}
-                            >
-                                <GoLink className="mr-1 h-3 w-3" />
-                                <span>{link.title}</span>
-                            </ExternalLink>
-                        </li>
-                    ))}
-                </ul>
+                                    href={link.href}
+                                >
+                                    <GoLink className="mr-1 h-3 w-3" />
+                                    <span>{link.title}</span>
+                                </ExternalLink>
+                            </li>
+                        ))}
+                    </ul>
+                )}
                 <TechList techs={project.tech} />
             </div>
         </Card>

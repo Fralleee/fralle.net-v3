@@ -51,6 +51,14 @@
                 }
             ],
             "tech": ["TypeScript", "Chrome API"]
+        },
+        {
+            "title": "VAKT",
+            "url": "https://www.youtube.com/@vakt-game",
+            "image": "/vakt.png",
+            "details": "Tower defense game where you upgrade and protect a tower vs enemies.",
+            "links": [],
+            "tech": ["Unity", "C#"]
         }
     ]
 }
