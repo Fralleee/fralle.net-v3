@@ -1,8 +1,8 @@
-import PollsImage from "../public/polls.png";
-import CookingWithFralleImage from "../public/cooking-with-fralle.png";
-import SwiftPasteImage from "../public/swiftpaste.png";
-import DisneyPlusImage from "../public/disney+.png";
-import VaktImage from "../public/vakt.png";
+import PollsImage from "@/public/polls.png";
+import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
+import SwiftPasteImage from "@/public/swiftpaste.png";
+import DisneyPlusImage from "@/public/disney+.png";
+import VaktImage from "@/public/vakt.png";
 
 const data = {
     data: [
