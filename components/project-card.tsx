@@ -3,11 +3,13 @@ import Card from "./card";
 import { GoArrowRight, GoLink } from "react-icons/go";
 import TechList from "./tech-list";
 import ExternalLink from "./external-link";
+import { Project } from "@/data/types";
 
-export default function Project({ project }: { project: Project }) {
+export default function ProjectCard({ project }: { project: Project }) {
     return (
         <Card>
             <Image
+                placeholder="blur"
                 src={project.image}
                 alt={project.title}
                 width={96}

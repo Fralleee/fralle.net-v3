@@ -3,8 +3,13 @@ import { GoArrowRight, GoLocation } from "react-icons/go";
 import TechList from "./tech-list";
 import Image from "next/image";
 import ExternalLink from "./external-link";
+import { Experience } from "@/data/types";
 
-export default function Experience({ experience }: { experience: Experience }) {
+export default function ExperienceCard({
+    experience,
+}: {
+    experience: Experience;
+}) {
     return (
         <Card>
             <header

@@ -1,6 +1,7 @@
-import articlesData from "@/data/articlesData.json";
+import articlesData from "@/data/articlesData";
 import Section from "@/components/section";
-import Article from "@/components/article-card";
+import ArticleCard from "@/components/article-card";
+import { Articles } from "@/data/types";
 
 export default function ProjectsSection() {
     const articles: Articles = articlesData;
@@ -12,7 +13,7 @@ export default function ProjectsSection() {
                         key={article.title}
                         className="relative mb-8 after:hidden lg:after:block"
                     >
-                        <Article article={article} />
+                        <ArticleCard article={article} />
                     </li>
                 ))}
             </ul>

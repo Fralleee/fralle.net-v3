@@ -4,11 +4,13 @@ import { GoArrowRight, GoNote } from "react-icons/go";
 
 import TechList from "./tech-list";
 import ExternalLink from "./external-link";
+import { Article } from "@/data/types";
 
-export default function Article({ article }: { article: Article }) {
+export default function ArticleCard({ article }: { article: Article }) {
     return (
         <Card>
             <Image
+                placeholder="blur"
                 src={article.image}
                 alt={article.title}
                 width={96}

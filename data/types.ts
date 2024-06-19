@@ -1,4 +1,6 @@
-interface Experience {
+import { StaticImageData } from "next/image";
+
+export interface Experience {
     title: string;
     company: {
         name: string;
@@ -11,29 +13,29 @@ interface Experience {
     tech: string[];
 }
 
-interface Experiences {
+export interface Experiences {
     data: Experience[];
 }
 
-interface Link {
+export interface Link {
     title: string;
     href: string;
 }
 
-interface Project {
+export interface Project {
     title: string;
     url: string;
-    image: string;
+    image: StaticImageData;
     details: string;
     links: Link[];
     tech: string[];
 }
 
-interface Projects {
+export interface Projects {
     data: Project[];
 }
 
-interface Article {
+export interface Article {
     title: string;
     subtitle: string;
     meta: string;
@@ -42,6 +44,6 @@ interface Article {
     tags: string[];
 }
 
-interface Articles {
+export interface Articles {
     data: Article[];
 }

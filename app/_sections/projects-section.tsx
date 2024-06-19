@@ -1,6 +1,7 @@
-import projectsData from "@/data/projectsData.json";
+import projectsData from "@/data/projectsData";
 import Section from "@/components/section";
-import Project from "@/components/project-card";
+import ProjectCard from "@/components/project-card";
+import { Projects } from "@/data/types";
 
 export default function ProjectsSection() {
     const projects: Projects = projectsData;
@@ -12,7 +13,7 @@ export default function ProjectsSection() {
                         key={project.title}
                         className="relative mb-8 after:hidden lg:after:block"
                     >
-                        <Project project={project} />
+                        <ProjectCard project={project} />
                     </li>
                 ))}
             </ul>

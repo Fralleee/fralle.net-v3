@@ -1,6 +1,7 @@
-import experiencesData from "@/data/experiencesData.json";
+import experiencesData from "@/data/experiencesData";
 import Section from "@/components/section";
-import Experience from "@/components/experience-card";
+import ExperienceCard from "@/components/experience-card";
+import { Experiences } from "@/data/types";
 
 export default function ExperienceSection() {
     const experiences: Experiences = experiencesData;
@@ -12,7 +13,7 @@ export default function ExperienceSection() {
                         key={experience.company.name}
                         className="relative mb-8 after:hidden lg:after:block"
                     >
-                        <Experience experience={experience} />
+                        <ExperienceCard experience={experience} />
                     </li>
                 ))}
             </ol>
