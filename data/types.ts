@@ -40,7 +40,7 @@ export interface Article {
     subtitle: string;
     meta: string;
     url: string;
-    image: string;
+    image: StaticImageData;
     tags: string[];
 }
 

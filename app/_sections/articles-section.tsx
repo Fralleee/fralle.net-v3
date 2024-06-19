@@ -3,8 +3,8 @@ import Section from "@/components/section";
 import ArticleCard from "@/components/article-card";
 import { Articles } from "@/data/types";
 
-export default function ProjectsSection() {
-    const articles: Articles = articlesData;
+export default function ArticlesSection() {
+    const articles = articlesData as Articles;
     return (
         <Section id="articles" label="Articles" title="Articles">
             <ul className="group/list direction-aware">
