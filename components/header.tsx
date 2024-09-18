@@ -9,7 +9,7 @@ const extraScrollPaddingArticles = 250;
 const extraScrollPaddingProjects = 100;
 
 export default function Header() {
-    const [activeSection, setActiveSection] = useState("about");
+    const [activeSection, setActiveSection] = useState("");
     const [isAutoScrolling, setIsAutoScrolling] = useState(false);
     const autoScrollTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
         null,
@@ -59,6 +59,8 @@ export default function Header() {
                 setActiveSection("experience");
             }
         };
+
+        handleScroll();
 
         window.addEventListener("scroll", handleScroll);
         return () => {
