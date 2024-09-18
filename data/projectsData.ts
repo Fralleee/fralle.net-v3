@@ -36,7 +36,7 @@ const data = {
         },
         {
             title: "SwiftPaste",
-            url: "https://chrome.google.com/webstore/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj/",
+            url: "https://chromewebstore.google.com/detail/swiftpaste/ocamjpjndljkgcoeadplclcoiepjicgj",
             image: SwiftPasteImage,
             details:
                 "A Chrome extension optimizing text inputs by providing quick access to a categorized text storage, based on context.",
@@ -50,7 +50,7 @@ const data = {
         },
         {
             title: "Disney+ Unblur",
-            url: "https://chrome.google.com/webstore/detail/disney%20-unblur/epegomjmecdogfefcmadjkbinicbldmb/",
+            url: "https://chromewebstore.google.com/detail/disney+-unblur/epegomjmecdogfefcmadjkbinicbldmb",
             image: DisneyPlusImage,
             details:
                 "A Chrome extension that removes the blur overlay from Disney+ controls.",
