@@ -1,64 +1,57 @@
 import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
-    return {
-        name: "Roland Chelwing | Fralle",
-        short_name: "Roland Chelwing | Fralle",
-        description: "Roland Chelwing | Fralle",
-        start_url: "/",
-        display: "standalone",
-        background_color: "#21293a",
-        theme_color: "#21293a",
-        icons: [
-            {
-                src: "/icons/icon-72x72.png",
-                sizes: "72x72",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-96x96.png",
-                sizes: "96x96",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-128x128.png",
-                sizes: "128x128",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-144x144.png",
-                sizes: "144x144",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-152x152.png",
-                sizes: "152x152",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-192x192.png",
-                sizes: "192x192",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-384x384.png",
-                sizes: "384x384",
-                type: "image/png",
-            },
-            {
-                src: "/icons/icon-512x512.png",
-                sizes: "512x512",
-                type: "image/png",
-            },
-        ],
-        scope: "/",
-        categories: [
-            "Portfolio",
-            "Personalization",
-            "Productivity",
-            "Education",
-            "Entertainment",
-            "Social",
-        ],
-    };
+  return {
+    name: "Roland Chelwing | Fralle",
+    short_name: "Roland Chelwing | Fralle",
+    description: "Roland Chelwing | Fralle",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#21293a",
+    theme_color: "#21293a",
+    icons: [
+      {
+        src: "/icons/icon-72x72.png",
+        sizes: "72x72",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-128x128.png",
+        sizes: "128x128",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-144x144.png",
+        sizes: "144x144",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-152x152.png",
+        sizes: "152x152",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-384x384.png",
+        sizes: "384x384",
+        type: "image/png",
+      },
+      {
+        src: "/icons/icon-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+    scope: "/",
+    categories: ["Portfolio", "Personalization", "Productivity", "Education", "Entertainment", "Social"],
+  };
 }
