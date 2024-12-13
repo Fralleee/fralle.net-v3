@@ -1,3 +1,4 @@
+import GetHarleyLogo from "@/public/logos/getharley.svg";
 import NiraLogo from "@/public/logos/nira.svg";
 import StackOverflowLogo from "@/public/logos/stackoverflow.svg";
 import YubicoLogo from "@/public/logos/yubico.svg";
@@ -6,6 +7,18 @@ import AsitisLogo from "@/public/logos/asitis.svg";
 
 const data = {
   data: [
+    {
+      title: "Frontend Engineer",
+      company: {
+        name: "GetHarley",
+        url: "https://getharley.com/",
+        location: "London, UK (Remote)",
+      },
+      iconSrc: GetHarleyLogo.src,
+      duration: "2024 — Present",
+      details: "Contributing to a telehealth platform that connects patients with expert clinicians, focusing on enhancing user experience, implementing new features and designs.",
+      tech: ["TypeScript", "React", "NextJs", "AWS"],
+    },
     {
       title: "Senior Software Engineer",
       company: {
