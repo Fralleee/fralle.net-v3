@@ -51,7 +51,7 @@ const data = {
         location: "California, US (Remote)",
       },
       iconSrc: YubicoLogo.src,
-      duration: "April — Oct 2022",
+      duration: "2022 — 2022",
       details: "Responsible for maintaining an e-commerce website built on React and overseeing the migration of its functionality to a new Svelte-based application.",
       tech: ["TypeScript", "React", "NextJs", "Svelte", "TailwindCSS", "MySQL", "Docker"],
     },
