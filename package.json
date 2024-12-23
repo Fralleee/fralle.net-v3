@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sentry/nextjs": "8",
     "next": "15.1.2",
     "posthog-js": "^1.203.1",
     "react": "19.0.0",
