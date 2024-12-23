@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface NavLinkProps {
   link: string;
@@ -11,10 +12,10 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
   const activeClass = active ? "active" : "";
   return (
     <li className="mt-2">
-      <a className={cn("group relative flex h-8 w-48 items-center", activeClass)} href={link} onClick={onClick}>
+      <Link className={cn("group relative flex h-8 w-48 items-center", activeClass)} href={link} onClick={onClick}>
         <div
           className={cn(
-            "absolute inset-0 -z-10 w-2 rounded border border-slate-900/50 bg-slate-500/50 transition-all group-hover:w-48  group-hover:bg-amber-300 group-focus-visible:w-48 group-focus-visible:bg-amber-300 motion-reduce:transition-none",
+            "absolute inset-0 -z-10 w-2 rounded border border-slate-900/50 bg-slate-500/50 transition-all group-hover:w-48 group-hover:bg-amber-300 group-focus-visible:w-48 group-focus-visible:bg-amber-300 motion-reduce:transition-none",
             active && "h-8 w-48",
             active && "border-slate-900/50 bg-slate-700/50",
           )}
@@ -22,7 +23,7 @@ export default function NavLink({ link, title, active, onClick }: NavLinkProps) 
         <div className="nav-text ml-6 text-xs font-bold uppercase tracking-widest text-slate-300 transition-all group-hover:ml-8 group-hover:text-slate-800 group-focus-visible:ml-8 group-focus-visible:text-slate-800 motion-reduce:transition-none">
           {title}
         </div>
-      </a>
+      </Link>
     </li>
   );
 }

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import NavLink from "./nav-link";
 import { FaLinkedin, FaGithub, FaMedium, FaDev } from "react-icons/fa";
 import IconLink from "./icon-link";
+import Link from "next/link";
 
 const extraScrollPaddingArticles = 250;
 const extraScrollPaddingProjects = 100;
@@ -64,7 +65,7 @@ export default function Header() {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-          <a href="/">Roland Chelwing</a>
+          <Link href="/">Roland Chelwing</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Fullstack Software Engineer</h2>
         <p className="mt-4 max-w-xs leading-normal">A curious and dedicated programmer with diverse experience spanning multiple industries.</p>
