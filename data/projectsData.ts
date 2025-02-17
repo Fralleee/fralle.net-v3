@@ -1,5 +1,6 @@
 import PollsImage from "@/public/polls.png";
 import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
+import CopyCodeContextImage from "@/public/copy-code-context.png";
 import SwiftPasteImage from "@/public/swiftpaste.png";
 import DisneyPlusImage from "@/public/disney+.png";
 import VaktImage from "@/public/vakt.png";
@@ -32,6 +33,19 @@ const data = {
         },
       ],
       tech: ["TypeScript", "NextJs"],
+    },
+    {
+      title: "Copy Code Context",
+      url: "https://marketplace.visualstudio.com/items?itemName=Fralle.copy-code-context",
+      image: CopyCodeContextImage,
+      details: "A VSCode extension that allows you to quickly copy one or more files or entire folders as Markdown-formatted code snippets.",
+      links: [
+        {
+          title: "Code",
+          href: "https://github.com/fralleee/copy-code-context/",
+        },
+      ],
+      tech: ["TypeScript", "VSCode"],
     },
     {
       title: "SwiftPaste",
