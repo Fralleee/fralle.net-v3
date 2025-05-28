@@ -21,14 +21,14 @@ const data = {
       tech: ["TypeScript", "NextJs"],
     },
     {
-      title: "Copy Code Context",
+      title: "Copy Context",
       url: "https://marketplace.visualstudio.com/items?itemName=Fralle.copy-code-context",
       image: CopyCodeContextImage,
       details: "A VSCode extension that allows you to quickly copy one or more files or entire folders as Markdown-formatted code snippets.",
       links: [
         {
           title: "Code",
-          href: "https://github.com/fralleee/copy-code-context/",
+          href: "https://github.com/fralleee/copy-context/",
         },
       ],
       tech: ["TypeScript", "VSCode"],
