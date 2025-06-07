@@ -20,7 +20,7 @@ export default function ArticleCard({ article }: { article: Article }) {
 			<div className="z-10 order-2 overflow-hidden sm:col-span-6">
 				<h3 className="mb-2 font-medium leading-snug">
 					<ExternalLink
-						className="groudiv/link inline-flex max-w-[100%] items-baseline overflow-hidden font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
+						className="groudiv/link inline-flex max-w-full items-baseline overflow-hidden font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
 						href={article.url}
 						aria-label={article.title}
 					>
