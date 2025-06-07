@@ -1,5 +1,5 @@
-import type { Insights } from "@/data/types";
-import projectsData from "@/data/projectsData";
+import type { Insights } from "@/lib/types";
+import { data } from "@/data/projects";
 
 interface PostHogInsight {
 	short_id: string;
@@ -14,9 +14,7 @@ const {
 
 export async function getInsights(): Promise<Insights> {
 	try {
-		const ids = projectsData.data
-			.map((project) => project.posthogId)
-			.filter(Boolean);
+		const ids = data.map((project) => project.posthogId).filter(Boolean);
 		const url = new URL(`/api/projects/${projectId}/insights`, host);
 
 		const res = await fetch(url.toString(), {

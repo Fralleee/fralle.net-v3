@@ -1,5 +1,42 @@
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+
+interface Props {
+	href: string;
+	className: string;
+	children: React.ReactNode;
+}
+
+export function ExternalLink({ href, children, className, ...rest }: Props) {
+	const separator = href.indexOf("?") !== -1 ? "&" : "?";
+	const utmParameters = `${separator}utm_source=fralle.net&utm_medium=portfolio&utm_campaign=external_link`;
+	const fullUrl = href + utmParameters;
+	return (
+		<Link
+			href={fullUrl}
+			target="_blank"
+			rel="noopener noreferrer"
+			className={className}
+			{...rest}
+		>
+			{children}
+		</Link>
+	);
+}
+
+export function TextLink({
+	href,
+	children,
+}: { href: string; children: React.ReactNode }) {
+	return (
+		<ExternalLink
+			className=" font-medium text-slate-200 hover:text-amber-400 hover:underline focus-visible:text-amber-400"
+			href={href}
+		>
+			{children}
+		</ExternalLink>
+	);
+}
 
 interface NavLinkProps {
 	link: string;

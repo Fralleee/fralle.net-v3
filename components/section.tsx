@@ -1,9 +1,11 @@
-export default function Section({
-	id,
-	label,
-	title,
-	children,
-}: { id: string; label: string; title: string; children: React.ReactNode }) {
+interface Props {
+	id: string;
+	label: string;
+	title: string;
+	children: React.ReactNode;
+}
+
+export default function Section({ id, label, title, children }: Props) {
 	return (
 		<section
 			id={id}
