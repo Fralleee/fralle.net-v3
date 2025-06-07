@@ -30,7 +30,7 @@ export default function ExperienceCard({
 						href={experience.company.url}
 						aria-label={`${experience.title} at ${experience.company.name}`}
 					>
-						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute hidden rounded lg:block" />
+						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute rounded" />
 						<span>{experience.title}</span>
 						<span className="mx-2">·</span>
 						<span className="inline-block">
