@@ -25,8 +25,6 @@ export function Card({
 	extraLink,
 	sparkline,
 }: Props) {
-	console.log({ image });
-	console.log({ imageType: typeof image });
 	return (
 		<div className="group relative grid pb-4 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:opacity-100!">
 			<header
@@ -55,7 +53,7 @@ export function Card({
 						href={url}
 						aria-label={title}
 					>
-						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute rounded lg:block" />
+						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute lg:block" />
 						<span className="truncate">{title}</span>
 						<span className="inline-block">
 							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 opacity-0 transition-all group-hover/link:translate-x-1 group-hover/link:opacity-100 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />

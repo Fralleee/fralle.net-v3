@@ -2,9 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FaLinkedin, FaGithub, FaMedium, FaDev } from "react-icons/fa";
-import IconLink from "../icon-link";
 import Link from "next/link";
-import NavLink from "../link";
+import NavLink, { IconLink } from "../link";
 
 const extraScrollPaddingArticles = 250;
 const extraScrollPaddingProjects = 100;
