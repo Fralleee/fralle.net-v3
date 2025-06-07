@@ -12,7 +12,8 @@
 		"enabled": true
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": ["**", "!**/node_modules/**", "!**/.next/**"]
 	},
 	"formatter": {
 		"enabled": true
