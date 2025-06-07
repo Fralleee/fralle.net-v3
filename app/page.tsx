@@ -68,7 +68,7 @@ export default async function Home() {
 					<ul className="group/list direction-aware">
 						{experiences.map((entry) => (
 							<li
-								className="relative mb-8 after:hidden lg:after:block"
+								className="relative mb-8 after:hidden md:after:block"
 								key={entry.title}
 							>
 								<Card
@@ -90,7 +90,7 @@ export default async function Home() {
 					<ul className="group/list direction-aware">
 						{projects.map((entry) => (
 							<li
-								className="relative mb-8 after:hidden lg:after:block"
+								className="relative mb-8 after:hidden md:after:block"
 								key={entry.title}
 							>
 								<Card
@@ -116,7 +116,7 @@ export default async function Home() {
 					<ul className="group/list direction-aware">
 						{articles.map((entry) => (
 							<li
-								className="relative mb-8 after:hidden lg:after:block"
+								className="relative mb-8 after:hidden md:after:block"
 								key={entry.title}
 							>
 								<Card

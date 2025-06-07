@@ -26,14 +26,14 @@ export function Card({
 	sparkline,
 }: Props) {
 	return (
-		<div className="group relative grid pb-4 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:opacity-100!">
-			<header className="z-10 mt-1 mb-2 font-semibold text-slate-500 text-xs uppercase tracking-wide sm:col-span-2 lg:text-center">
+		<div className="group relative grid pb-4 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 md:group-hover/list:opacity-50 md:hover:opacity-100!">
+			<header className="z-10 mt-1 mb-2 font-semibold text-slate-500 text-xs uppercase tracking-wide sm:col-span-2 md:text-center">
 				{imageHeader && imageHeader}
 				<Image
 					alt={title}
 					blurDataURL={image.blurDataURL}
 					className={cn(
-						"my-4 h-16 w-16 transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:translate-y-1 lg:mx-auto lg:mb-0 lg:opacity-50 lg:contrast-75",
+						"my-4 h-16 w-16 transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:translate-y-1 md:mx-auto md:mb-0 md:opacity-50 md:contrast-75",
 						{ "h-22 w-22": !imageHeader, "my-0": !imageHeader },
 					)}
 					height={image.height}
@@ -50,7 +50,7 @@ export function Card({
 						className="group/link inline-flex items-baseline font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
 						href={url}
 					>
-						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute lg:block" />
+						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute md:block" />
 						<span className="truncate">{title}</span>
 						<span className="inline-block">
 							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 opacity-0 transition-all group-hover/link:translate-x-1 group-hover/link:opacity-100 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
@@ -83,7 +83,9 @@ export function Card({
 								<TooltipTrigger className="relative mr-8 ml-auto">
 									<Sparkline data={sparkline.data} title={sparkline.label} />
 								</TooltipTrigger>
-								<TooltipContent>{sparkline.label}</TooltipContent>
+								<TooltipContent side="top" sideOffset={5}>
+									{sparkline.label}
+								</TooltipContent>
 							</Tooltip>
 						)}
 					</div>
