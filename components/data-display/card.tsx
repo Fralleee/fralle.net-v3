@@ -1,10 +1,10 @@
 import Image from "next/image";
-import TagList from "./tag-list";
-import { ExternalLink } from "./link";
+import TagList from "../tag-list";
+import { ExternalLink } from "../link";
 import { Sparkline } from "./sparkline";
 import { ArrowRight, Link } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../tooltip";
 import type { Entry } from "@/lib/types";
 
 interface Props extends Omit<Entry, "posthogId" | "sparkline"> {

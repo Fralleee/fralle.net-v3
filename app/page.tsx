@@ -1,10 +1,10 @@
-import Header from "@/components/header";
+import Header from "@/components/layout/header";
 import { getInsights } from "../lib/insights";
-import Section from "@/components/section";
+import Section from "@/components/layout/section";
 import { data as experiences } from "@/data/experiences";
 import { data as projects } from "@/data/projects";
 import { data as articles } from "@/data/articles";
-import { Card } from "@/components/card";
+import { Card } from "@/components/data-display/card";
 import { TextLink } from "@/components/link";
 
 export const revalidate = 86400;

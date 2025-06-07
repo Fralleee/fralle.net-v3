@@ -1,13 +1,20 @@
-import Link from "next/link";
+import Link, { type LinkProps } from "next/link";
 import { cn } from "@/lib/utils";
+import type { IconType } from "react-icons";
+import type { LucideIcon } from "lucide-react";
 
-interface Props {
+interface ExternalLinkProps extends LinkProps {
 	href: string;
 	className: string;
 	children: React.ReactNode;
 }
 
-export function ExternalLink({ href, children, className, ...rest }: Props) {
+export function ExternalLink({
+	href,
+	children,
+	className,
+	...rest
+}: ExternalLinkProps) {
 	const separator = href.indexOf("?") !== -1 ? "&" : "?";
 	const utmParameters = `${separator}utm_source=fralle.net&utm_medium=portfolio&utm_campaign=external_link`;
 	const fullUrl = href + utmParameters;
@@ -24,10 +31,12 @@ export function ExternalLink({ href, children, className, ...rest }: Props) {
 	);
 }
 
-export function TextLink({
-	href,
-	children,
-}: { href: string; children: React.ReactNode }) {
+interface TextLinkProps {
+	href: string;
+	children: React.ReactNode;
+}
+
+export function TextLink({ href, children }: TextLinkProps) {
 	return (
 		<ExternalLink
 			className=" font-medium text-slate-200 hover:text-amber-400 hover:underline focus-visible:text-amber-400"
@@ -38,26 +47,27 @@ export function TextLink({
 	);
 }
 
-interface NavLinkProps {
-	link: string;
+interface NavLinkProps extends LinkProps {
 	title: string;
 	active: boolean;
 	onClick: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
 export default function NavLink({
-	link,
 	title,
 	active,
+	href,
 	onClick,
+	...rest
 }: NavLinkProps) {
 	const activeClass = active ? "active" : "";
 	return (
 		<li className="mt-2">
 			<Link
 				className={cn("group relative flex h-8 w-48 items-center", activeClass)}
-				href={link}
+				href={href}
 				onClick={onClick}
+				{...rest}
 			>
 				<div
 					className={cn(
@@ -73,3 +83,22 @@ export default function NavLink({
 		</li>
 	);
 }
+
+interface IconLinkProps {
+	href: string;
+	title: string;
+	icon: LucideIcon | IconType;
+}
+
+export const IconLink = ({ href, title, icon: Icon }: IconLinkProps) => {
+	return (
+		<ExternalLink
+			className="group relative text-slate-500 transition-all hover:text-slate-200 focus-visible:text-slate-200"
+			href={href}
+		>
+			<span className="sr-only">{title}</span>
+			<span className="-z-12 -left-3 -top-3 absolute h-12 w-12 scale-0 rounded-full bg-slate-900 transition-transform group-hover:scale-100" />
+			<Icon className="relative h-6 w-6" />
+		</ExternalLink>
+	);
+};
