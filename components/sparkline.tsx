@@ -31,9 +31,9 @@ export const Sparkline: FC<SparklineProps> = memo(
 				width={width}
 				height={height}
 				className={className}
-				aria-labelledby="title"
+				role="img"
+				aria-label={title}
 			>
-				<title>{title}</title>
 				<defs>
 					<linearGradient
 						id={id}

@@ -49,7 +49,7 @@ export default function ProjectCard({
 					<Tooltip>
 						<TooltipTrigger className="relative mr-8 ml-auto">
 							<Sparkline
-								title="Project Activity"
+								title={project.activityLabel}
 								className=""
 								data={insight || []}
 							/>
