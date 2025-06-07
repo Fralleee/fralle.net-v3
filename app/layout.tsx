@@ -3,7 +3,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
-import GoogleAnalytics from "@/components/google-analytics";
 import { CSPostHogProvider } from "../providers/posthog";
 import Tracker from "@/components/tracker";
 
@@ -56,20 +55,19 @@ export default function RootLayout({
 }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className="scroll-smooth">
-			<GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
-			<CSPostHogProvider>
-				<body
-					className={cn(
-						"bg-slate-800 text-slate-400 leading-relaxed antialiased selection:bg-amber-300 selection:text-amber-900",
-						font.className,
-					)}
-				>
+			<body
+				className={cn(
+					"bg-slate-800 text-slate-400 leading-relaxed antialiased selection:bg-amber-300 selection:text-amber-900",
+					font.className,
+				)}
+			>
+				<CSPostHogProvider>
 					<Tracker />
 					<div className="mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
 						{children}
 					</div>
-				</body>
-			</CSPostHogProvider>
+				</CSPostHogProvider>
+			</body>
 		</html>
 	);
 }

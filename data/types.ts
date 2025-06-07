@@ -27,8 +27,9 @@ export interface Project {
 	url: string;
 	image: StaticImageData;
 	details: string;
-	links: Link[];
+	codeLink: Link | null;
 	tech: string[];
+	posthogId?: string;
 }
 
 export interface Projects {
@@ -47,3 +48,5 @@ export interface Article {
 export interface Articles {
 	data: Article[];
 }
+
+export type Insights = Record<string, number[]>;

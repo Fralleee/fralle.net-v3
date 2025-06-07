@@ -1,9 +1,13 @@
 import projectsData from "@/data/projectsData";
 import Section from "@/components/section";
 import ProjectCard from "@/components/project-card";
-import type { Projects } from "@/data/types";
+import type { Insights, Projects } from "@/data/types";
 
-export default function ProjectsSection() {
+interface Props {
+	insights: Insights;
+}
+
+export default function ProjectsSection({ insights }: Props) {
 	const projects: Projects = projectsData;
 	return (
 		<Section id="projects" label="Projects" title="Projects">
@@ -13,7 +17,10 @@ export default function ProjectsSection() {
 						key={project.title}
 						className="relative mb-8 after:hidden lg:after:block"
 					>
-						<ProjectCard project={project} />
+						<ProjectCard
+							project={project}
+							insight={project.posthogId ? insights[project.posthogId] : []}
+						/>
 					</li>
 				))}
 			</ul>

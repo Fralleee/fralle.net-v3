@@ -4,8 +4,12 @@ import TechList from "./tech-list";
 import ExternalLink from "./external-link";
 import type { Project } from "@/data/types";
 import { ArrowRight, Link } from "lucide-react";
+import { Sparkline } from "./sparkline";
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({
+	project,
+	insight,
+}: { project: Project; insight?: number[] }) {
 	return (
 		<Card>
 			<Image
@@ -31,21 +35,23 @@ export default function ProjectCard({ project }: { project: Project }) {
 					</ExternalLink>
 				</h3>
 				<p className="mt-2 text-sm leading-normal">{project.details}</p>
-				{project.links.length > 0 && (
-					<ul className="mt-2 flex flex-wrap" aria-label="Related links">
-						{project.links.map((link) => (
-							<li key={link.title}>
-								<ExternalLink
-									className="relative mt-2 inline-flex items-center pr-4 font-medium text-slate-300 text-sm hover:text-amber-300 focus-visible:text-amber-300 "
-									href={link.href}
-								>
-									<Link className="mr-1 h-3 w-3" />
-									<span>{link.title}</span>
-								</ExternalLink>
-							</li>
-						))}
-					</ul>
-				)}
+				<div className="mt-2 flex items-center">
+					{project.codeLink && (
+						<ExternalLink
+							className="relative mt-2 inline-flex items-center pr-4 font-medium text-slate-300 text-sm hover:text-amber-300 focus-visible:text-amber-300 "
+							href={project.codeLink.href}
+						>
+							<Link className="mr-1 h-3 w-3" />
+							<span>{project.codeLink.title}</span>
+						</ExternalLink>
+					)}
+
+					<Sparkline
+						title="Project Activity"
+						className="mr-8 ml-auto"
+						data={insight || []}
+					/>
+				</div>
 				<TechList techs={project.tech} />
 			</div>
 		</Card>

@@ -12,12 +12,10 @@ const data = {
 			image: CookingWithFralleImage,
 			details:
 				"Your go-to recipe app for all your favorite dishes. Easily adjust portions and ingredients on the fly, and explore a wide range of recipes, from mouth-watering pizzas and fluffy muffins to refreshing drinks.",
-			links: [
-				{
-					title: "Code",
-					href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
-				},
-			],
+			codeLink: {
+				title: "Code",
+				href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
+			},
 			tech: ["TypeScript", "NextJs"],
 		},
 		{
@@ -26,13 +24,12 @@ const data = {
 			image: CopyCodeContextImage,
 			details:
 				"A VSCode extension that allows you to quickly copy one or more files or entire folders as Markdown-formatted code snippets.",
-			links: [
-				{
-					title: "Code",
-					href: "https://github.com/fralleee/copy-context/",
-				},
-			],
+			codeLink: {
+				title: "Code",
+				href: "https://github.com/fralleee/copy-context/",
+			},
 			tech: ["TypeScript", "VSCode"],
+			posthogId: "qZPEi5DV",
 		},
 		{
 			title: "Disney+ Unblur",
@@ -40,12 +37,10 @@ const data = {
 			image: DisneyPlusImage,
 			details:
 				"A Chrome extension that removes the blur-sm overlay from Disney+ controls.",
-			links: [
-				{
-					title: "Code",
-					href: "https://github.com/Fralleee/disneyplus-unblur/",
-				},
-			],
+			codeLink: {
+				title: "Code",
+				href: "https://github.com/Fralleee/disneyplus-unblur/",
+			},
 			tech: ["TypeScript", "Chrome API"],
 		},
 		{
@@ -54,12 +49,10 @@ const data = {
 			image: PollsImage,
 			details:
 				"Effortlessly create real-time polls and storypoint sessions. Perfect for making every group choice clear and simple!",
-			links: [
-				{
-					title: "Code",
-					href: "https://github.com/Fralleee/voting-app/",
-				},
-			],
+			codeLink: {
+				title: "Code",
+				href: "https://github.com/Fralleee/voting-app/",
+			},
 			tech: ["TypeScript", "NextJs", "Firebase"],
 		},
 		{
@@ -68,7 +61,7 @@ const data = {
 			image: VaktImage,
 			details:
 				"Tower defense game where you upgrade and protect a tower vs enemies.",
-			links: [],
+			codeLink: null,
 			tech: ["Unity", "C#"],
 		},
 	],
