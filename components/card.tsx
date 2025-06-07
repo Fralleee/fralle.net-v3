@@ -71,7 +71,7 @@ export function Card({
 					<div className="mt-2 flex items-center">
 						{extraLink && (
 							<ExternalLink
-								className="relative mt-2 inline-flex items-center pr-4 font-medium text-slate-300 text-sm hover:text-amber-300 focus-visible:text-amber-300"
+								className="relative inline-flex items-center pr-4 font-medium text-slate-300 text-sm hover:text-amber-300 focus-visible:text-amber-300"
 								href={extraLink.href}
 								aria-label={extraLink.title}
 							>
@@ -84,9 +84,7 @@ export function Card({
 								<TooltipTrigger className="relative mr-8 ml-auto">
 									<Sparkline data={sparkline.data} title={sparkline.label} />
 								</TooltipTrigger>
-								<TooltipContent>
-									<p>{sparkline.label}</p>
-								</TooltipContent>
+								<TooltipContent>{sparkline.label}</TooltipContent>
 							</Tooltip>
 						)}
 					</div>

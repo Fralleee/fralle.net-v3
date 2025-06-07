@@ -16,7 +16,7 @@ export const data: Entry[] = [
 			href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
 		},
 		tags: ["TypeScript", "NextJs"],
-		posthogId: "qZPEi5DV",
+		posthogId: "7OrpqaRG",
 		sparkline: {
 			label: "Visitors (30 days)",
 		},
