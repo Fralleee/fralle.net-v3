@@ -1,11 +1,11 @@
+import { Card } from "@/components/data-display/card";
 import Header from "@/components/layout/header";
-import { getInsights } from "../lib/insights";
 import Section from "@/components/layout/section";
+import { TextLink } from "@/components/link";
+import { data as articles } from "@/data/articles";
 import { data as experiences } from "@/data/experiences";
 import { data as projects } from "@/data/projects";
-import { data as articles } from "@/data/articles";
-import { Card } from "@/components/data-display/card";
-import { TextLink } from "@/components/link";
+import { getInsights } from "../lib/insights";
 
 export const revalidate = 86400;
 
@@ -14,7 +14,7 @@ export default async function Home() {
 	return (
 		<div className="lg:flex lg:justify-between lg:gap-4">
 			<Header />
-			<main id="content" className="pt-24 lg:w-1/2 lg:py-24">
+			<main className="pt-24 lg:w-1/2 lg:py-24" id="content">
 				<Section id="about" label="About me" title="About">
 					<div>
 						<p className="mb-4">
@@ -68,18 +68,18 @@ export default async function Home() {
 					<ul className="group/list direction-aware">
 						{experiences.map((entry) => (
 							<li
-								key={entry.title}
 								className="relative mb-8 after:hidden lg:after:block"
+								key={entry.title}
 							>
 								<Card
 									details={entry.details}
-									title={entry.title}
-									url={entry.url}
-									image={entry.image}
-									tags={entry.tags}
 									extraLink={entry.extraLink}
+									image={entry.image}
 									imageHeader={entry.imageHeader}
 									meta={entry.meta}
+									tags={entry.tags}
+									title={entry.title}
+									url={entry.url}
 								/>
 							</li>
 						))}
@@ -90,22 +90,22 @@ export default async function Home() {
 					<ul className="group/list direction-aware">
 						{projects.map((entry) => (
 							<li
-								key={entry.title}
 								className="relative mb-8 after:hidden lg:after:block"
+								key={entry.title}
 							>
 								<Card
 									details={entry.details}
-									title={entry.title}
-									url={entry.url}
-									image={entry.image}
-									tags={entry.tags}
 									extraLink={entry.extraLink}
+									image={entry.image}
+									imageHeader={entry.imageHeader}
+									meta={entry.meta}
 									sparkline={{
 										data: entry.posthogId ? insights[entry.posthogId] : [],
 										label: entry.sparkline?.label,
 									}}
-									meta={entry.meta}
-									imageHeader={entry.imageHeader}
+									tags={entry.tags}
+									title={entry.title}
+									url={entry.url}
 								/>
 							</li>
 						))}
@@ -116,22 +116,22 @@ export default async function Home() {
 					<ul className="group/list direction-aware">
 						{articles.map((entry) => (
 							<li
-								key={entry.title}
 								className="relative mb-8 after:hidden lg:after:block"
+								key={entry.title}
 							>
 								<Card
 									details={entry.details}
-									title={entry.title}
-									url={entry.url}
-									image={entry.image}
-									tags={entry.tags}
 									extraLink={entry.extraLink}
+									image={entry.image}
+									imageHeader={entry.imageHeader}
+									meta={entry.meta}
 									sparkline={{
 										data: entry.posthogId ? insights[entry.posthogId] : [],
 										label: entry.sparkline?.label,
 									}}
-									meta={entry.meta}
-									imageHeader={entry.imageHeader}
+									tags={entry.tags}
+									title={entry.title}
+									url={entry.url}
 								/>
 							</li>
 						))}

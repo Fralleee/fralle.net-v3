@@ -1,3 +1,4 @@
+import { Blocks, Gamepad2, Globe } from "lucide-react";
 import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
 import CopyCodeContextImage from "@/public/copy-code-context.png";
 import DisneyPlusImage from "@/public/disney+.png";
@@ -15,6 +16,10 @@ export const data: Entry[] = [
 			title: "Code",
 			href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
 		},
+		meta: {
+			icon: Globe,
+			text: "Next.js App",
+		},
 		tags: ["TypeScript", "NextJs"],
 		posthogId: "7OrpqaRG",
 		sparkline: {
@@ -30,6 +35,10 @@ export const data: Entry[] = [
 		extraLink: {
 			title: "Code",
 			href: "https://github.com/fralleee/copy-context/",
+		},
+		meta: {
+			icon: Blocks,
+			text: "VSCode Extension",
 		},
 		tags: ["TypeScript", "VSCode"],
 		posthogId: "qZPEi5DV",
@@ -47,6 +56,10 @@ export const data: Entry[] = [
 			title: "Code",
 			href: "https://github.com/Fralleee/disneyplus-unblur/",
 		},
+		meta: {
+			icon: Blocks,
+			text: "Chrome Extension",
+		},
 		tags: ["TypeScript", "Chrome API"],
 	},
 	{
@@ -55,6 +68,10 @@ export const data: Entry[] = [
 		image: VaktImage,
 		details:
 			"Tower defense game where you upgrade and protect a single tower vs enemies.",
+		meta: {
+			icon: Gamepad2,
+			text: "Game",
+		},
 		tags: ["Unity", "C#"],
 	},
 ];

@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { FaLinkedin, FaGithub, FaMedium, FaDev } from "react-icons/fa";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import { FaDev, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import NavLink, { IconLink } from "../link";
 
 const extraScrollPaddingArticles = 250;
@@ -86,62 +86,62 @@ export default function Header() {
 					multiple industries.
 				</p>
 
-				<nav className="nav hidden lg:block" aria-label="In-page jump links">
+				<nav aria-label="In-page jump links" className="nav hidden lg:block">
 					<ul className="mt-8 w-max">
 						<NavLink
-							href="#about"
-							title="About"
 							active={activeSection === "about"}
+							href="#about"
 							onClick={handleNavLinkClick("about")}
+							title="About"
 						/>
 						<NavLink
-							href="#experience"
-							title="Experience"
 							active={activeSection === "experience"}
+							href="#experience"
 							onClick={handleNavLinkClick("experience")}
+							title="Experience"
 						/>
 						<NavLink
-							href="#projects"
-							title="Projects"
 							active={activeSection === "projects"}
+							href="#projects"
 							onClick={handleNavLinkClick("projects")}
+							title="Projects"
 						/>
 						<NavLink
-							href="#articles"
-							title="Articles"
 							active={activeSection === "articles"}
+							href="#articles"
 							onClick={handleNavLinkClick("articles")}
+							title="Articles"
 						/>
 					</ul>
 				</nav>
 			</div>
-			<ul className="mt-16 flex items-center gap-6" aria-label="Social media">
+			<ul aria-label="Social media" className="mt-16 flex items-center gap-6">
 				<li>
 					<IconLink
 						href="https://github.com/Fralleee/"
-						title="GitHub"
 						icon={FaGithub}
+						title="GitHub"
 					/>
 				</li>
 				<li>
 					<IconLink
 						href="https://www.linkedin.com/in/fralle/"
-						title="LinkedIn"
 						icon={FaLinkedin}
+						title="LinkedIn"
 					/>
 				</li>
 				<li>
 					<IconLink
 						href="https://medium.com/@fralle/"
-						title="Medium"
 						icon={FaMedium}
+						title="Medium"
 					/>
 				</li>
 				<li>
 					<IconLink
 						href="https://dev.to/fralleee"
-						title="Medium"
 						icon={FaDev}
+						title="Medium"
 					/>
 				</li>
 			</ul>

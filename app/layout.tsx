@@ -2,16 +2,14 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { TooltipProvider } from "@/components/tooltip";
+import Tracker from "@/components/tracker";
 import { cn } from "@/lib/utils";
 import { CSPostHogProvider } from "../providers/posthog";
-import Tracker from "@/components/tracker";
-import { TooltipProvider } from "@/components/tooltip";
 
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://www.fralle.net"),
-	title: "Roland Chelwing | Fralle",
 	description:
 		"Roland Chelwing, a professional curious and dedicated software engineer with diverse experience spanning multiple industries.",
 	keywords: [
@@ -49,13 +47,17 @@ export const metadata: Metadata = {
 		"back-end",
 		"backend",
 	],
+	metadataBase: new URL("https://www.fralle.net"),
+	title: "Roland Chelwing | Fralle",
 };
 
 export default function RootLayout({
 	children,
-}: { children: React.ReactNode }) {
+}: {
+	children: React.ReactNode;
+}) {
 	return (
-		<html lang="en" className="scroll-smooth">
+		<html className="scroll-smooth" lang="en">
 			<body
 				className={cn(
 					"bg-slate-800 text-slate-400 leading-relaxed antialiased selection:bg-amber-300 selection:text-amber-900",

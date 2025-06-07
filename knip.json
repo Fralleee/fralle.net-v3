@@ -1,9 +1,9 @@
 {
 	"$schema": "https://unpkg.com/knip@5/schema.json",
 	"entry": ["next.config.{js,ts,cjs,mjs}", "{app,pages}/**/*.{js,jsx,ts,tsx}"],
+	"ignore": [".next/**"],
 	"project": ["**/*.{js,jsx,ts,tsx}"],
 	"rules": {
 		"devDependencies": "off"
-	},
-	"ignore": [".next/**"]
+	}
 }

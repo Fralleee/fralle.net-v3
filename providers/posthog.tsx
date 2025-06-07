@@ -2,7 +2,7 @@
 
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
-import { useEffect, type PropsWithChildren } from "react";
+import { type PropsWithChildren, useEffect } from "react";
 
 export function CSPostHogProvider({ children }: PropsWithChildren<unknown>) {
 	useEffect(() => {
@@ -10,7 +10,7 @@ export function CSPostHogProvider({ children }: PropsWithChildren<unknown>) {
 		const host = process.env.NEXT_PUBLIC_POSTHOG_HOST;
 
 		if (!key || !host) {
-			console.error("❌ PostHog key or host missing", { key, host });
+			console.error("❌ PostHog key or host missing", { host, key });
 			return;
 		}
 

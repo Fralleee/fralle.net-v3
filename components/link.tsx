@@ -1,7 +1,7 @@
-import Link, { type LinkProps } from "next/link";
-import { cn } from "@/lib/utils";
-import type { IconType } from "react-icons";
 import type { LucideIcon } from "lucide-react";
+import Link, { type LinkProps } from "next/link";
+import type { IconType } from "react-icons";
+import { cn } from "@/lib/utils";
 
 interface ExternalLinkProps extends LinkProps {
 	href: string;
@@ -20,10 +20,10 @@ export function ExternalLink({
 	const fullUrl = href + utmParameters;
 	return (
 		<Link
-			href={fullUrl}
-			target="_blank"
-			rel="noopener noreferrer"
 			className={className}
+			href={fullUrl}
+			rel="noopener noreferrer"
+			target="_blank"
 			{...rest}
 		>
 			{children}

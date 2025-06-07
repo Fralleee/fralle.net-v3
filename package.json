@@ -1,17 +1,4 @@
 {
-	"name": "fralle.net-v3",
-	"version": "0.1.0",
-	"private": true,
-	"engines": {
-		"node": ">=20"
-	},
-	"scripts": {
-		"dev": "next dev --turbopack",
-		"build": "next build",
-		"start": "next start",
-		"lint": "biome lint . && knip",
-		"knip": "knip"
-	},
 	"dependencies": {
 		"@radix-ui/react-tooltip": "^1.2.7",
 		"lucide-react": "^0.513.0",
@@ -22,7 +9,7 @@
 		"react-icons": "^5.4.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
+		"@biomejs/biome": "^2.0.0-beta.6",
 		"@tailwindcss/postcss": "^4.1.8",
 		"@types/node": "22.10.2",
 		"@types/react": "19.0.2",
@@ -34,8 +21,21 @@
 		"tailwindcss": "^4.1.8",
 		"typescript": "5.7.2"
 	},
+	"engines": {
+		"node": ">=20"
+	},
+	"name": "fralle.net-v3",
+	"private": true,
 	"resolutions": {
 		"@types/react": "19.0.2",
 		"@types/react-dom": "19.0.2"
-	}
+	},
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev --turbopack",
+		"knip": "knip",
+		"lint": "biome lint . && knip",
+		"start": "next start"
+	},
+	"version": "0.1.0"
 }

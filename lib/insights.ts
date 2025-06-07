@@ -1,5 +1,5 @@
-import type { Insights } from "@/lib/types";
 import { data } from "@/data/projects";
+import type { Insights } from "@/lib/types";
 
 interface PostHogInsight {
 	short_id: string;
