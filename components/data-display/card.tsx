@@ -25,6 +25,8 @@ export function Card({
 	extraLink,
 	sparkline,
 }: Props) {
+	console.log({ image });
+	console.log({ imageType: typeof image });
 	return (
 		<div className="group relative grid pb-4 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:opacity-100!">
 			<header
@@ -33,6 +35,8 @@ export function Card({
 			>
 				{imageHeader && imageHeader}
 				<Image
+					placeholder={image.blurDataURL ? "blur" : "empty"}
+					blurDataURL={image.blurDataURL}
 					src={image.src}
 					alt={title}
 					width={image.width}
