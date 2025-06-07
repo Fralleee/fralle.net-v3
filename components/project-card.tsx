@@ -28,7 +28,7 @@ export default function ProjectCard({
 						href={project.url}
 						aria-label={project.title}
 					>
-						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute hidden rounded lg:block" />
+						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute rounded" />
 						<span>{project.title}</span>
 						<span className="inline-block">
 							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
