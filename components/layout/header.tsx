@@ -90,25 +90,25 @@ export default function Header() {
 				<nav className="nav hidden lg:block" aria-label="In-page jump links">
 					<ul className="mt-8 w-max">
 						<NavLink
-							link="#about"
+							href="#about"
 							title="About"
 							active={activeSection === "about"}
 							onClick={handleNavLinkClick("about")}
 						/>
 						<NavLink
-							link="#experience"
+							href="#experience"
 							title="Experience"
 							active={activeSection === "experience"}
 							onClick={handleNavLinkClick("experience")}
 						/>
 						<NavLink
-							link="#projects"
+							href="#projects"
 							title="Projects"
 							active={activeSection === "projects"}
 							onClick={handleNavLinkClick("projects")}
 						/>
 						<NavLink
-							link="#articles"
+							href="#articles"
 							title="Articles"
 							active={activeSection === "articles"}
 							onClick={handleNavLinkClick("articles")}
