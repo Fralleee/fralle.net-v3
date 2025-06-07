@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Card from "./card";
-import { GoArrowRight, GoNote } from "react-icons/go";
 
 import TechList from "./tech-list";
 import ExternalLink from "./external-link";
 import type { Article } from "@/data/types";
+import { ArrowRight, Newspaper } from "lucide-react";
 
 export default function ArticleCard({ article }: { article: Article }) {
 	return (
@@ -20,18 +20,18 @@ export default function ArticleCard({ article }: { article: Article }) {
 			<div className="z-10 order-2 overflow-hidden sm:col-span-6">
 				<h3 className="mb-2 font-medium leading-snug">
 					<ExternalLink
-						className="groudiv/link inline-flex max-w-full items-baseline overflow-hidden font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
+						className="group/link inline-flex max-w-full items-baseline overflow-hidden font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
 						href={article.url}
 						aria-label={article.title}
 					>
 						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute hidden rounded lg:block" />
 						<span className="truncate">{article.title}</span>
 						<span className="inline-block">
-							<GoArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
 						</span>
 					</ExternalLink>
 					<div className="mt-px flex items-center text-slate-500 text-sm">
-						<GoNote className="mr-1 h-4 w-4" />
+						<Newspaper className="mr-1 h-4 w-4" />
 						{article.meta}
 					</div>
 				</h3>

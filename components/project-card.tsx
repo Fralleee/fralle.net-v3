@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Card from "./card";
-import { GoArrowRight, GoLink } from "react-icons/go";
 import TechList from "./tech-list";
 import ExternalLink from "./external-link";
 import type { Project } from "@/data/types";
+import { ArrowRight, Link } from "lucide-react";
 
 export default function ProjectCard({ project }: { project: Project }) {
 	return (
@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute hidden rounded lg:block" />
 						<span>{project.title}</span>
 						<span className="inline-block">
-							<GoArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
 						</span>
 					</ExternalLink>
 				</h3>
@@ -39,7 +39,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 									className="relative mt-2 inline-flex items-center pr-4 font-medium text-slate-300 text-sm hover:text-amber-300 focus-visible:text-amber-300 "
 									href={link.href}
 								>
-									<GoLink className="mr-1 h-3 w-3" />
+									<Link className="mr-1 h-3 w-3" />
 									<span>{link.title}</span>
 								</ExternalLink>
 							</li>

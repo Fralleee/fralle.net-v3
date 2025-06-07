@@ -1,9 +1,9 @@
 import Card from "./card";
-import { GoArrowRight, GoLocation } from "react-icons/go";
 import TechList from "./tech-list";
 import Image from "next/image";
 import ExternalLink from "./external-link";
 import type { Experience } from "@/data/types";
+import { ArrowRight, MapPin } from "lucide-react";
 
 export default function ExperienceCard({
 	experience,
@@ -35,11 +35,11 @@ export default function ExperienceCard({
 						<span className="mx-2">·</span>
 						<span className="inline-block">
 							{experience.company.name}
-							<GoArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:translate-x-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 opacity-0 transition-transform group-hover/link:translate-x-1 group-hover/link:opacity-100 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
 						</span>
 					</ExternalLink>
 					<div className="mt-px flex items-center text-slate-500 text-sm">
-						<GoLocation className="mr-1 h-4 w-4" />
+						<MapPin className="mr-1 h-3 w-3" />
 						{experience.company.location}
 					</div>
 				</h3>

@@ -1,10 +1,11 @@
 import type { IconType } from "react-icons";
+import type { LucideIcon } from "lucide-react";
 import ExternalLink from "./external-link";
 
 interface Props {
 	href: string;
 	title: string;
-	icon: IconType;
+	icon: LucideIcon | IconType;
 }
 
 const IconLink = ({ href, title, icon: Icon }: Props) => {
