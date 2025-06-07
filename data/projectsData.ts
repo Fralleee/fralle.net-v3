@@ -1,4 +1,3 @@
-import PollsImage from "@/public/polls.png";
 import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
 import CopyCodeContextImage from "@/public/copy-code-context.png";
 import DisneyPlusImage from "@/public/disney+.png";
@@ -11,7 +10,7 @@ const data = {
 			url: "https://cooking.fralle.net/",
 			image: CookingWithFralleImage,
 			details:
-				"Your go-to recipe app for all your favorite dishes. Easily adjust portions and ingredients on the fly, and explore a wide range of recipes, from mouth-watering pizzas and fluffy muffins to refreshing drinks.",
+				"Next.js recipe app using Payload CMS. Also contains my best recipes.",
 			codeLink: {
 				title: "Code",
 				href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
@@ -25,7 +24,7 @@ const data = {
 			url: "https://marketplace.visualstudio.com/items?itemName=Fralle.copy-code-context",
 			image: CopyCodeContextImage,
 			details:
-				"A VSCode extension that allows you to quickly copy one or more files or entire folders as Markdown-formatted code snippets.",
+				"VSCode extension that lets you copy context/structure for sharing in Markdown format.",
 			codeLink: {
 				title: "Code",
 				href: "https://github.com/fralleee/copy-context/",
@@ -39,7 +38,7 @@ const data = {
 			url: "https://chromewebstore.google.com/detail/disney+-unblur/epegomjmecdogfefcmadjkbinicbldmb",
 			image: DisneyPlusImage,
 			details:
-				"A Chrome extension that removes the blur-sm overlay from Disney+ controls.",
+				"Chrome extension that removes the blur overlay that appears on video controls and subtitles on Disney+",
 			codeLink: {
 				title: "Code",
 				href: "https://github.com/Fralleee/disneyplus-unblur/",
@@ -47,23 +46,11 @@ const data = {
 			tech: ["TypeScript", "Chrome API"],
 		},
 		{
-			title: "Polls",
-			url: "https://poll.fralle.net/",
-			image: PollsImage,
-			details:
-				"Effortlessly create real-time polls and storypoint sessions. Perfect for making every group choice clear and simple!",
-			codeLink: {
-				title: "Code",
-				href: "https://github.com/Fralleee/voting-app/",
-			},
-			tech: ["TypeScript", "NextJs", "Firebase"],
-		},
-		{
 			title: "VAKT",
 			url: "https://www.youtube.com/@vakt-game",
 			image: VaktImage,
 			details:
-				"Tower defense game where you upgrade and protect a tower vs enemies.",
+				"Tower defense game where you upgrade and protect a single tower vs enemies.",
 			codeLink: null,
 			tech: ["Unity", "C#"],
 		},
