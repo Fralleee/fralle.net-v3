@@ -33,7 +33,7 @@ export function Card({
 					alt={title}
 					blurDataURL={image.blurDataURL}
 					className={cn(
-						"my-4 h-16 w-16 transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:translate-y-1 md:mx-auto md:mb-0 md:opacity-50 md:contrast-75",
+						"my-4 h-16 w-16 transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:mx-auto sm:translate-y-1 md:mb-0 md:opacity-50 md:contrast-75",
 						{ "h-22 w-22": !imageHeader, "my-0": !imageHeader },
 					)}
 					height={image.height}
