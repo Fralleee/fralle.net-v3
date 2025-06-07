@@ -30,6 +30,7 @@ export interface Project {
 	codeLink: Link | null;
 	tech: string[];
 	posthogId?: string;
+	activityLabel?: string;
 }
 
 export interface Projects {

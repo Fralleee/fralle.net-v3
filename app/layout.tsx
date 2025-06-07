@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { CSPostHogProvider } from "../providers/posthog";
 import Tracker from "@/components/tracker";
+import { TooltipProvider } from "@/components/tooltip";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -63,9 +64,11 @@ export default function RootLayout({
 			>
 				<CSPostHogProvider>
 					<Tracker />
-					<div className="mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
-						{children}
-					</div>
+					<TooltipProvider delayDuration={100}>
+						<div className="mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+							{children}
+						</div>
+					</TooltipProvider>
 				</CSPostHogProvider>
 			</body>
 		</html>

@@ -5,6 +5,7 @@ import ExternalLink from "./external-link";
 import type { Project } from "@/data/types";
 import { ArrowRight, Link } from "lucide-react";
 import { Sparkline } from "./sparkline";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/tooltip";
 
 export default function ProjectCard({
 	project,
@@ -45,12 +46,18 @@ export default function ProjectCard({
 							<span>{project.codeLink.title}</span>
 						</ExternalLink>
 					)}
-
-					<Sparkline
-						title="Project Activity"
-						className="mr-8 ml-auto"
-						data={insight || []}
-					/>
+					<Tooltip>
+						<TooltipTrigger className="relative mr-8 ml-auto">
+							<Sparkline
+								title="Project Activity"
+								className=""
+								data={insight || []}
+							/>
+						</TooltipTrigger>
+						<TooltipContent>
+							<p>{project.activityLabel}</p>
+						</TooltipContent>
+					</Tooltip>
 				</div>
 				<TechList techs={project.tech} />
 			</div>

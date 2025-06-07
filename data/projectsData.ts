@@ -17,6 +17,8 @@ const data = {
 				href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
 			},
 			tech: ["TypeScript", "NextJs"],
+			posthogId: "7OrpqaRG",
+			activityLabel: "Visitors (30 days)",
 		},
 		{
 			title: "Copy Context",
@@ -30,6 +32,7 @@ const data = {
 			},
 			tech: ["TypeScript", "VSCode"],
 			posthogId: "qZPEi5DV",
+			activityLabel: "Commands invoked (30 days)",
 		},
 		{
 			title: "Disney+ Unblur",
