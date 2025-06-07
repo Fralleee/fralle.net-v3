@@ -1,35 +1,37 @@
 {
-  "name": "fralle.net-v3",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "15.1.2",
-    "posthog-js": "^1.203.1",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-icons": "^5.4.0"
-  },
-  "devDependencies": {
+	"name": "fralle.net-v3",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "biome lint . && ls-lint && knip",
+		"knip": "knip"
+	},
+	"dependencies": {
+		"next": "15.1.2",
+		"posthog-js": "^1.203.1",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"react-icons": "^5.4.0"
+	},
+	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-    "@types/node": "22.10.2",
-    "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2",
-    "autoprefixer": "10.4.20",
-    "clsx": "^2.1.1",
-    "postcss": "8.4.49",
-    "tailwind-merge": "^2.6.0",
-    "tailwindcss": "3.4.17",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "5.7.2"
-  },
-  "resolutions": {
-    "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2"
-  }
+		"@types/node": "22.10.2",
+		"@types/react": "19.0.2",
+		"@types/react-dom": "19.0.2",
+		"autoprefixer": "10.4.20",
+		"clsx": "^2.1.1",
+		"knip": "^5.46.0",
+		"postcss": "8.4.49",
+		"tailwind-merge": "^2.6.0",
+		"tailwindcss": "3.4.17",
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "5.7.2"
+	},
+	"resolutions": {
+		"@types/react": "19.0.2",
+		"@types/react-dom": "19.0.2"
+	}
 }
