@@ -7,7 +7,7 @@ interface PostHogInsight {
 }
 
 const {
-	NEXT_PUBLIC_POSTHOG_HOST: host,
+	POSTHOG_HOST: host,
 	POSTHOG_PROJECT_ID: projectId,
 	POSTHOG_PROJECT_API_KEY: apiKey,
 } = process.env;
