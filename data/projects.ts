@@ -7,71 +7,71 @@ import type { Entry } from "../lib/types";
 
 export const data: Entry[] = [
 	{
-		title: "Cooking with Fralle",
-		url: "https://cooking.fralle.net/",
-		image: CookingWithFralleImage,
 		details:
 			"Next.js recipe app using Payload CMS. Also contains my best recipes.",
 		extraLink: {
-			title: "Code",
 			href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
+			title: "Code",
 		},
+		image: CookingWithFralleImage,
 		meta: {
 			icon: Globe,
 			text: "Next.js App",
 		},
-		tags: ["TypeScript", "NextJs"],
 		posthogId: "7OrpqaRG",
 		sparkline: {
 			label: "Visitors (30 days)",
 		},
+		tags: ["TypeScript", "NextJs"],
+		title: "Cooking with Fralle",
+		url: "https://cooking.fralle.net/",
 	},
 	{
-		title: "Copy Context",
-		url: "https://marketplace.visualstudio.com/items?itemName=Fralle.copy-code-context",
-		image: CopyCodeContextImage,
 		details:
 			"VSCode extension that lets you copy context/structure for sharing in Markdown format.",
 		extraLink: {
-			title: "Code",
 			href: "https://github.com/fralleee/copy-context/",
+			title: "Code",
 		},
+		image: CopyCodeContextImage,
 		meta: {
 			icon: Blocks,
 			text: "VSCode Extension",
 		},
-		tags: ["TypeScript", "VSCode"],
 		posthogId: "qZPEi5DV",
 		sparkline: {
 			label: "Commands invoked (30 days)",
 		},
+		tags: ["TypeScript", "VSCode"],
+		title: "Copy Context",
+		url: "https://marketplace.visualstudio.com/items?itemName=Fralle.copy-code-context",
 	},
 	{
-		title: "Disney+ Unblur",
-		url: "https://chromewebstore.google.com/detail/disney+-unblur/epegomjmecdogfefcmadjkbinicbldmb",
-		image: DisneyPlusImage,
 		details:
 			"Chrome extension that removes the blur overlay that appears on video controls and subtitles on Disney+",
 		extraLink: {
-			title: "Code",
 			href: "https://github.com/Fralleee/disneyplus-unblur/",
+			title: "Code",
 		},
+		image: DisneyPlusImage,
 		meta: {
 			icon: Blocks,
 			text: "Chrome Extension",
 		},
 		tags: ["TypeScript", "Chrome API"],
+		title: "Disney+ Unblur",
+		url: "https://chromewebstore.google.com/detail/disney+-unblur/epegomjmecdogfefcmadjkbinicbldmb",
 	},
 	{
-		title: "VAKT",
-		url: "https://www.youtube.com/@vakt-game",
-		image: VaktImage,
 		details:
 			"Tower defense game where you upgrade and protect a single tower vs enemies.",
+		image: VaktImage,
 		meta: {
 			icon: Gamepad2,
 			text: "Game",
 		},
 		tags: ["Unity", "C#"],
+		title: "VAKT",
+		url: "https://www.youtube.com/@vakt-game",
 	},
 ];
