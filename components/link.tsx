@@ -71,9 +71,9 @@ export default function NavLink({
 			>
 				<div
 					className={cn(
-						"-z-10 absolute inset-0 w-2 rounded border border-slate-900/50 bg-slate-500/50 transition-all group-hover:w-48 group-hover:bg-amber-300 group-focus-visible:w-48 group-focus-visible:bg-amber-300 motion-reduce:transition-none",
+						"-z-10 absolute inset-0 w-2 rounded border border-slate-950 bg-slate-700 transition-all group-hover:w-48 group-hover:bg-amber-300 group-focus-visible:w-48 group-focus-visible:bg-amber-300 motion-reduce:transition-none",
 						active && "h-8 w-48",
-						active && "border-slate-900/50 bg-slate-700/50",
+						active && "border-slate-950 bg-slate-700",
 					)}
 				/>
 				<div className="nav-text ml-6 font-bold text-slate-300 text-xs uppercase tracking-widest transition-all group-hover:ml-8 group-hover:text-slate-800 group-focus-visible:ml-8 group-focus-visible:text-slate-800 motion-reduce:transition-none">
@@ -105,7 +105,6 @@ export const IconLink = ({
 			href={href}
 		>
 			<span className="sr-only">{title}</span>
-			{/* <span className="-z-12 -left-3 -top-3 absolute h-12 w-12 scale-0 rounded-full bg-slate-900 transition-transform group-hover:scale-100" /> */}
 			<Icon className="relative h-6 w-6" />
 		</ExternalLink>
 	);
