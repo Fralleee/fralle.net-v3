@@ -60,7 +60,7 @@ export default function RootLayout({
 		<html className="scroll-smooth" lang="en">
 			<body
 				className={cn(
-					"bg-slate-800 text-slate-400 leading-relaxed antialiased selection:bg-amber-300 selection:text-amber-900",
+					"bg-slate-900 text-slate-400 leading-relaxed antialiased selection:bg-amber-300 selection:text-amber-900",
 					font.className,
 				)}
 			>
