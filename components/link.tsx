@@ -1,12 +1,12 @@
 import type { LucideIcon } from "lucide-react";
 import Link, { type LinkProps } from "next/link";
+import type { PropsWithChildren } from "react";
 import type { IconType } from "react-icons";
 import { cn } from "@/lib/utils";
 
 interface ExternalLinkProps extends LinkProps {
 	href: string;
-	className: string;
-	children: React.ReactNode;
+	className?: string;
 }
 
 export function ExternalLink({
@@ -14,7 +14,7 @@ export function ExternalLink({
 	children,
 	className,
 	...rest
-}: ExternalLinkProps) {
+}: PropsWithChildren<ExternalLinkProps>) {
 	const separator = href.indexOf("?") !== -1 ? "&" : "?";
 	const utmParameters = `${separator}utm_source=fralle.net&utm_medium=portfolio&utm_campaign=external_link`;
 	const fullUrl = href + utmParameters;
@@ -84,20 +84,28 @@ export default function NavLink({
 	);
 }
 
-interface IconLinkProps {
+interface IconLinkProps extends ExternalLinkProps {
 	href: string;
 	title: string;
 	icon: LucideIcon | IconType;
 }
 
-export const IconLink = ({ href, title, icon: Icon }: IconLinkProps) => {
+export const IconLink = ({
+	href,
+	title,
+	icon: Icon,
+	className,
+}: IconLinkProps) => {
 	return (
 		<ExternalLink
-			className="group relative text-slate-500 transition-all hover:text-slate-200 focus-visible:text-slate-200"
+			className={cn(
+				"group relative grid h-14 w-14 place-items-center text-slate-500 transition-all hover:text-slate-200 focus-visible:text-slate-200",
+				className,
+			)}
 			href={href}
 		>
 			<span className="sr-only">{title}</span>
-			<span className="-z-12 -left-3 -top-3 absolute h-12 w-12 scale-0 rounded-full bg-slate-900 transition-transform group-hover:scale-100" />
+			{/* <span className="-z-12 -left-3 -top-3 absolute h-12 w-12 scale-0 rounded-full bg-slate-900 transition-transform group-hover:scale-100" /> */}
 			<Icon className="relative h-6 w-6" />
 		</ExternalLink>
 	);

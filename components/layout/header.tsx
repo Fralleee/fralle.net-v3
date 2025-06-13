@@ -115,29 +115,32 @@ export default function Header() {
 					</ul>
 				</nav>
 			</div>
-			<ul aria-label="Social media" className="mt-16 flex items-center gap-6">
-				<li>
+			<ul
+				aria-label="Social media"
+				className="group/list direction-aware-x mt-16 flex items-center"
+			>
+				<li className=" after:hidden md:after:block">
 					<IconLink
 						href="https://github.com/Fralleee/"
 						icon={FaGithub}
 						title="GitHub"
 					/>
 				</li>
-				<li>
+				<li className="after:hidden md:after:block">
 					<IconLink
 						href="https://www.linkedin.com/in/fralle/"
 						icon={FaLinkedin}
 						title="LinkedIn"
 					/>
 				</li>
-				<li>
+				<li className="after:hidden md:after:block">
 					<IconLink
 						href="https://medium.com/@fralle/"
 						icon={FaMedium}
 						title="Medium"
 					/>
 				</li>
-				<li>
+				<li className="after:hidden md:after:block">
 					<IconLink
 						href="https://dev.to/fralleee"
 						icon={FaDev}
