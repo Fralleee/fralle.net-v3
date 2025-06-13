@@ -33,7 +33,7 @@ export function Card({
 					alt={title}
 					blurDataURL={image.blurDataURL}
 					className={cn(
-						"my-4 h-16 w-16 transition group-hover:opacity-100 group-hover:contrast-100 sm:order-1 sm:col-span-2 sm:mx-auto sm:translate-y-1 md:mb-0 md:opacity-50 md:contrast-75",
+						"my-4 h-16 w-16 transition group-hover:opacity-100 group-hover:contrast-100 sm:col-span-2 sm:mx-auto sm:translate-y-1 md:mb-0 md:opacity-50 md:contrast-75",
 						{ "h-22 w-22": !imageHeader, "my-0": !imageHeader },
 					)}
 					height={image.height}
@@ -43,8 +43,8 @@ export function Card({
 				/>
 			</header>
 
-			<div className="z-10 order-2 overflow-hidden sm:col-span-6">
-				<h3 className="mb-2 font-medium leading-snug">
+			<div className="z-10 overflow-hidden sm:col-span-6">
+				<h3 className="mb-2 flex flex-col gap-2 font-medium leading-snug">
 					<ExternalLink
 						aria-label={title}
 						className="group/link inline-flex items-baseline font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
@@ -57,21 +57,21 @@ export function Card({
 						</span>
 					</ExternalLink>
 					{meta && (
-						<div className="mt-px flex items-center text-slate-500 text-sm">
+						<div className="flex items-center text-slate-500 text-sm">
 							{meta.icon && <meta.icon className="mr-0.5" size={14} />}
 							<span className="ml-1">{meta.text}</span>
 						</div>
 					)}
 				</h3>
 
-				<p className="mt-2 text-sm leading-normal">{details}</p>
+				<p className="text-sm leading-normal">{details}</p>
 
 				{(extraLink || sparkline) && (
 					<div className="mt-2 flex items-center">
 						{extraLink && (
 							<ExternalLink
 								aria-label={extraLink.title}
-								className="relative inline-flex items-center pr-4 font-medium text-slate-300 text-sm hover:text-amber-300 focus-visible:text-amber-300"
+								className="relative inline-flex items-center pr-4 font-medium text-slate-200 text-sm hover:text-amber-300 focus-visible:text-amber-300"
 								href={extraLink.href}
 							>
 								<Link className="mr-1 h-3 w-3" />
