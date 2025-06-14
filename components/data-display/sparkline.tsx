@@ -11,8 +11,8 @@ interface SparklineProps {
 
 export function Sparkline({
 	data,
-	width = 100,
-	height = 20,
+	width = 155,
+	height = 30,
 	strokeWidth = 2,
 	className,
 	title,
@@ -51,12 +51,12 @@ export function Sparkline({
 					y2="100%"
 				>
 					<stop
-						className="from-sky-400 to-sky-900"
+						className="from-sky-400 to-sky-950"
 						offset="0%"
 						stopColor="var(--tw-gradient-from)"
 					/>
 					<stop
-						className="from-sky-400 to-sky-900"
+						className="from-sky-400 to-sky-950"
 						offset="100%"
 						stopColor="var(--tw-gradient-to)"
 					/>
