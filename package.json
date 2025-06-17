@@ -1,4 +1,8 @@
 {
+	"author": {
+		"email": "roland.chelwing@gmail.com",
+		"name": "Roland Chelwing"
+	},
 	"dependencies": {
 		"@radix-ui/react-tooltip": "^1.2.7",
 		"lucide-react": "^0.513.0",
