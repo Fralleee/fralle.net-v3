@@ -9,7 +9,7 @@
 		"react-icons": "^5.4.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.0.0-beta.6",
+		"@biomejs/biome": "^2.0.0",
 		"@tailwindcss/postcss": "^4.1.8",
 		"@types/node": "22.10.2",
 		"@types/react": "19.0.2",
