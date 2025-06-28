@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { cn } from "@/lib/utils";
 
 interface SparklineProps {
 	data: number[];
@@ -36,7 +37,7 @@ export function Sparkline({
 	return (
 		<svg
 			aria-label={title}
-			className={className}
+			className={cn(className, "group/sparkline")}
 			height={height}
 			role="img"
 			width={width}
@@ -51,12 +52,12 @@ export function Sparkline({
 					y2="100%"
 				>
 					<stop
-						className="from-sky-400 to-sky-950"
+						className="from-sky-400 to-sky-950 transition-colors duration-300 group-hover/sparkline:from-amber-300 group-hover/sparkline:to-amber-800"
 						offset="0%"
 						stopColor="var(--tw-gradient-from)"
 					/>
 					<stop
-						className="from-sky-400 to-sky-950"
+						className="from-sky-400 to-sky-950 transition-colors duration-300 group-hover/sparkline:from-amber-300 group-hover/sparkline:to-amber-800"
 						offset="100%"
 						stopColor="var(--tw-gradient-to)"
 					/>
