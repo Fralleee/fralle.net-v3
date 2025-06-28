@@ -36,8 +36,8 @@ export default async function Home() {
 								security company
 							</TextLink>
 							, a{" "}
-							<TextLink href="https://www.nira.com/">
-								highly innovative startup
+							<TextLink href="https://www.getharley.com/">
+								skincare platform
 							</TextLink>
 							, and{" "}
 							<TextLink href="https://stackoverflow.com/">
