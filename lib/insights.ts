@@ -3,7 +3,7 @@ import type { Insights } from "@/lib/types";
 
 interface PostHogInsight {
 	short_id: string;
-	result: { data: number[] }[];
+	result?: { data: number[] }[];
 }
 
 const {
@@ -27,8 +27,11 @@ export async function getInsights(): Promise<Insights> {
 		const { results }: { results: PostHogInsight[] } = await res.json();
 		return Object.fromEntries(
 			results
-				.filter(({ short_id }) => ids.includes(short_id))
-				.map(({ short_id, result }) => [short_id, result[0]?.data ?? []]),
+				.filter(
+					({ short_id, result }) =>
+						ids.includes(short_id) && (result || []).length > 0,
+				)
+				.map(({ short_id, result = [] }) => [short_id, result[0].data ?? []]),
 		);
 	} catch (error) {
 		console.error("Error fetching insights:", error);

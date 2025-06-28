@@ -10,7 +10,7 @@ interface SparklineProps {
 }
 
 export function Sparkline({
-	data,
+	data = [],
 	width = 155,
 	height = 30,
 	strokeWidth = 2,

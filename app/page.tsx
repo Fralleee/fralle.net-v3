@@ -73,9 +73,9 @@ export default async function Home() {
 							>
 								<Card
 									details={entry.details}
-									extraLink={entry.extraLink}
 									image={entry.image}
 									imageHeader={entry.imageHeader}
+									links={entry.links}
 									meta={entry.meta}
 									tags={entry.tags}
 									title={entry.title}
@@ -95,9 +95,9 @@ export default async function Home() {
 							>
 								<Card
 									details={entry.details}
-									extraLink={entry.extraLink}
 									image={entry.image}
 									imageHeader={entry.imageHeader}
+									links={entry.links}
 									meta={entry.meta}
 									sparkline={{
 										data: entry.posthogId ? insights[entry.posthogId] : [],
@@ -121,9 +121,9 @@ export default async function Home() {
 							>
 								<Card
 									details={entry.details}
-									extraLink={entry.extraLink}
 									image={entry.image}
 									imageHeader={entry.imageHeader}
+									links={entry.links}
 									meta={entry.meta}
 									sparkline={{
 										data: entry.posthogId ? insights[entry.posthogId] : [],

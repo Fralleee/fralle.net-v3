@@ -12,10 +12,11 @@ export interface Entry {
 		text: string;
 	};
 	tags: string[];
-	extraLink?: {
+	links?: {
+		icon?: LucideIcon;
 		href: string;
 		title: string;
-	};
+	}[];
 	posthogId?: string;
 	sparkline?: {
 		label?: string;

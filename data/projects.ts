@@ -1,4 +1,4 @@
-import { Blocks, Gamepad2, Globe } from "lucide-react";
+import { Blocks, Code2, Gamepad2, Globe } from "lucide-react";
 import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
 import CopyCodeContextImage from "@/public/copy-code-context.png";
 import DisneyPlusImage from "@/public/disney+.png";
@@ -9,11 +9,14 @@ export const data: Entry[] = [
 	{
 		details:
 			"Next.js recipe app using Payload CMS. Also contains my best recipes.",
-		extraLink: {
-			href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
-			title: "Code",
-		},
 		image: CookingWithFralleImage,
+		links: [
+			{
+				href: "https://github.com/Fralleee/cooking-with-fralle-v2/",
+				icon: Code2,
+				title: "Code",
+			},
+		],
 		meta: {
 			icon: Globe,
 			text: "Next.js App",
@@ -29,18 +32,26 @@ export const data: Entry[] = [
 	{
 		details:
 			"VSCode extension that lets you copy context/structure for sharing in Markdown format.",
-		extraLink: {
-			href: "https://github.com/fralleee/copy-context/",
-			title: "Code",
-		},
 		image: CopyCodeContextImage,
+		links: [
+			{
+				href: "https://github.com/fralleee/copy-context/",
+				icon: Code2,
+				title: "Code",
+			},
+			// {
+			// 	href: "https://github.com/fralleee/copy-context/",
+			// 	icon: Clapperboard,
+			// 	title: "Video",
+			// },
+		],
 		meta: {
 			icon: Blocks,
 			text: "VSCode Extension",
 		},
 		posthogId: "qZPEi5DV",
 		sparkline: {
-			label: "Commands invoked (30 days)",
+			label: "Commands invoked (90 days)",
 		},
 		tags: ["TypeScript", "VSCode"],
 		title: "Copy Context",
@@ -49,11 +60,14 @@ export const data: Entry[] = [
 	{
 		details:
 			"Chrome extension that removes the blur overlay that appears on video controls and subtitles on Disney+",
-		extraLink: {
-			href: "https://github.com/Fralleee/disneyplus-unblur/",
-			title: "Code",
-		},
 		image: DisneyPlusImage,
+		links: [
+			{
+				href: "https://github.com/Fralleee/disneyplus-unblur/",
+				icon: Code2,
+				title: "Code",
+			},
+		],
 		meta: {
 			icon: Blocks,
 			text: "Chrome Extension",

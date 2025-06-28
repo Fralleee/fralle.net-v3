@@ -22,7 +22,7 @@ export function Card({
 	details,
 	imageHeader,
 	tags,
-	extraLink,
+	links,
 	sparkline,
 }: Props) {
 	return (
@@ -53,12 +53,15 @@ export function Card({
 						<span className="-inset-x-4 -inset-y-2.5 md:-inset-x-6 md:-inset-y-4 absolute md:block" />
 						<span className="truncate">{title}</span>
 						<span className="inline-block">
-							<ArrowRight className="-translate-y-px ml-1 inline-block h-4 w-4 shrink-0 opacity-0 transition-all group-hover/link:translate-x-1 group-hover/link:opacity-100 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+							<ArrowRight
+								className="-translate-y-px ml-1 inline-block shrink-0 opacity-0 transition-all group-hover/link:translate-x-1 group-hover/link:opacity-100 group-focus-visible/link:translate-x-1 motion-reduce:transition-none"
+								size={16}
+							/>
 						</span>
 					</ExternalLink>
 					{meta && (
 						<div className="flex items-center text-slate-500 text-sm">
-							{meta.icon && <meta.icon className="mr-0.5" size={14} />}
+							{meta.icon && <meta.icon className="mr-0.5" size={16} />}
 							<span className="ml-1">{meta.text}</span>
 						</div>
 					)}
@@ -66,17 +69,31 @@ export function Card({
 
 				<p className="text-sm leading-normal">{details}</p>
 
-				{(extraLink || sparkline) && (
+				{(links || sparkline) && (
 					<div className="mt-2 flex items-center">
-						{extraLink && (
-							<ExternalLink
-								aria-label={extraLink.title}
-								className="relative inline-flex items-center pr-4 font-medium text-slate-200 text-sm hover:text-amber-300 focus-visible:text-amber-300"
-								href={extraLink.href}
-							>
-								<Link className="mr-1 h-3 w-3" />
-								<span className="ml-1">{extraLink.title}</span>
-							</ExternalLink>
+						{links && links.length > 0 && (
+							<div className="flex flex-col">
+								{links.map((link) => (
+									<ExternalLink
+										aria-label={link.title}
+										className="group/extralink relative inline-flex items-center py-1 pr-4 font-medium text-slate-200 text-sm hover:text-amber-300 focus-visible:text-amber-300"
+										href={link.href}
+										key={`${title}-${link.title}`}
+									>
+										{link.icon ? (
+											<link.icon className="mr-1" size={14} />
+										) : (
+											<Link className="mr-1" size={14} />
+										)}
+										<span className="ml-1">{link.title}</span>
+
+										<ArrowRight
+											className="ml-1 inline-block shrink-0 opacity-0 transition-all group-hover/extralink:translate-x-1 group-hover/extralink:opacity-100 group-focus-visible/extralink:translate-x-1 motion-reduce:transition-none"
+											size={16}
+										/>
+									</ExternalLink>
+								))}
+							</div>
 						)}
 						{sparkline && (
 							<Tooltip>
