@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FaDev, FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import NavLink, { IconLink } from "../link";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../tooltip";
 
 const extraScrollPaddingArticles = 250;
 const extraScrollPaddingProjects = 100;
@@ -120,32 +121,60 @@ export default function Header() {
 				className="group/list direction-aware-x mt-16 flex items-center"
 			>
 				<li className=" after:hidden md:after:block">
-					<IconLink
-						href="https://github.com/Fralleee/"
-						icon={FaGithub}
-						title="GitHub"
-					/>
+					<Tooltip>
+						<TooltipTrigger className="relative">
+							<IconLink
+								href="https://github.com/Fralleee/"
+								icon={FaGithub}
+								title="GitHub"
+							/>
+						</TooltipTrigger>
+						<TooltipContent className="font-medium" side="top" sideOffset={5}>
+							GitHub
+						</TooltipContent>
+					</Tooltip>
 				</li>
 				<li className="after:hidden md:after:block">
-					<IconLink
-						href="https://www.linkedin.com/in/fralle/"
-						icon={FaLinkedin}
-						title="LinkedIn"
-					/>
+					<Tooltip>
+						<TooltipTrigger className="relative">
+							<IconLink
+								href="https://www.linkedin.com/in/fralle/"
+								icon={FaLinkedin}
+								title="LinkedIn"
+							/>
+						</TooltipTrigger>
+						<TooltipContent className="font-medium" side="top" sideOffset={5}>
+							LinkedIn
+						</TooltipContent>
+					</Tooltip>
 				</li>
 				<li className="after:hidden md:after:block">
-					<IconLink
-						href="https://medium.com/@fralle/"
-						icon={FaMedium}
-						title="Medium"
-					/>
+					<Tooltip>
+						<TooltipTrigger className="relative">
+							<IconLink
+								href="https://medium.com/@fralle/"
+								icon={FaMedium}
+								title="Medium"
+							/>
+						</TooltipTrigger>
+						<TooltipContent className="font-medium" side="top" sideOffset={5}>
+							Medium
+						</TooltipContent>
+					</Tooltip>
 				</li>
 				<li className="after:hidden md:after:block">
-					<IconLink
-						href="https://dev.to/fralleee"
-						icon={FaDev}
-						title="Medium"
-					/>
+					<Tooltip>
+						<TooltipTrigger className="relative">
+							<IconLink
+								href="https://dev.to/fralleee"
+								icon={FaDev}
+								title="Dev.to"
+							/>
+						</TooltipTrigger>
+						<TooltipContent className="font-medium" side="top" sideOffset={5}>
+							Dev.to
+						</TooltipContent>
+					</Tooltip>
 				</li>
 			</ul>
 		</header>
