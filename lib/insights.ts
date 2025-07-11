@@ -1,8 +1,11 @@
 import { data } from "@/data/projects";
 import type { Insights } from "@/lib/types";
 
-interface PostHogInsight {
+interface PostHogInsightListItem {
+	id: number;
 	short_id: string;
+}
+interface PostHogInsightDetail {
 	result?: { data: number[] }[];
 }
 
@@ -11,30 +14,51 @@ const {
 	POSTHOG_PROJECT_ID: projectId,
 	POSTHOG_PROJECT_API_KEY: apiKey,
 } = process.env;
-
 export async function getInsights(): Promise<Insights> {
-	try {
-		const ids = data.map((project) => project.posthogId).filter(Boolean);
-		const url = new URL(`/api/projects/${projectId}/insights`, host);
-
-		const res = await fetch(url.toString(), {
-			headers: { Authorization: `Bearer ${apiKey}` },
-		});
-		if (!res.ok) {
-			return {};
-		}
-
-		const { results }: { results: PostHogInsight[] } = await res.json();
-		return Object.fromEntries(
-			results
-				.filter(
-					({ short_id, result }) =>
-						ids.includes(short_id) && (result || []).length > 0,
-				)
-				.map(({ short_id, result = [] }) => [short_id, result[0].data ?? []]),
-		);
-	} catch (error) {
-		console.error("Error fetching insights:", error);
+	const desiredShortIds = data.map((p) => p.posthogId).filter(Boolean);
+	const listUrl = new URL(
+		`/api/projects/${projectId}/insights`,
+		host,
+	).toString();
+	const listRes = await fetch(listUrl, {
+		headers: { Authorization: `Bearer ${apiKey}` },
+	});
+	if (!listRes.ok) {
+		console.error("Failed to fetch insight list", await listRes.text());
 		return {};
 	}
+	const { results: allInsights }: { results: PostHogInsightListItem[] } =
+		await listRes.json();
+
+	const idByShort = new Map(allInsights.map((i) => [i.short_id, i.id]));
+	const detailPromises = desiredShortIds.map(async (shortId) => {
+		if (!shortId) return null;
+
+		const insightId = idByShort.get(shortId);
+		if (!insightId) return null;
+
+		const detailUrl = new URL(
+			`/api/projects/${projectId}/insights/${insightId}/?refresh=force_blocking`,
+			host,
+		).toString();
+		const detailRes = await fetch(detailUrl, {
+			headers: { Authorization: `Bearer ${apiKey}` },
+		});
+		if (!detailRes.ok) {
+			console.warn(
+				`Failed to fetch detail for ${shortId}`,
+				await detailRes.text(),
+			);
+			return null;
+		}
+		const { result }: PostHogInsightDetail = await detailRes.json();
+		const dataSeries = result?.[0]?.data ?? [];
+		return [shortId, dataSeries] as [string, number[]];
+	});
+
+	const entries = (await Promise.all(detailPromises)).filter(
+		(e): e is [string, number[]] => e !== null,
+	);
+
+	return Object.fromEntries(entries);
 }
