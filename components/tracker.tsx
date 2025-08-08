@@ -1,24 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Tracker() {
 	const [gradientPosition, setGradientPosition] = useState({ x: 0, y: 0 });
 	const [colorScheme, setColorScheme] = useState("none");
 
-	useEffect(() => {
-		const handleMouseMove = (event: MouseEvent) => {
-			setGradientPosition({
-				x: event.clientX,
-				y: event.clientY,
-			});
-		};
+	const handleMouseMove = useCallback((event: MouseEvent) => {
+		setGradientPosition({
+			x: event.clientX,
+			y: event.clientY,
+		});
+	}, []);
 
+	useEffect(() => {
 		window.addEventListener("mousemove", handleMouseMove);
 		return () => {
 			window.removeEventListener("mousemove", handleMouseMove);
 		};
-	}, []);
+	}, [handleMouseMove]);
 
 	useEffect(() => {
 		const handleColorSchemeChange = (event: MediaQueryListEvent) => {

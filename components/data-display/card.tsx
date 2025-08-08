@@ -46,7 +46,7 @@ export function Card({
 			<div className="z-10 overflow-hidden sm:col-span-6">
 				<h3 className="mb-2 flex flex-col gap-2 font-medium leading-snug">
 					<ExternalLink
-						aria-label={title}
+						aria-label={`View ${title} project`}
 						className="group/link inline-flex items-baseline font-medium text-base text-slate-200 leading-tight hover:text-amber-300 focus-visible:text-amber-300"
 						href={url}
 					>
@@ -75,7 +75,7 @@ export function Card({
 							<div className="flex flex-col">
 								{links.map((link) => (
 									<ExternalLink
-										aria-label={link.title}
+										aria-label={`View ${link.title} for ${title}`}
 										className="group/extralink relative inline-flex items-center py-1 pr-4 font-medium text-slate-200 text-sm hover:text-amber-300 focus-visible:text-amber-300"
 										href={link.href}
 										key={`${title}-${link.title}`}
@@ -97,7 +97,10 @@ export function Card({
 						)}
 						{sparkline && (
 							<Tooltip>
-								<TooltipTrigger className="relative mr-8 ml-auto">
+								<TooltipTrigger
+									aria-label={`Show ${sparkline.label || "sparkline"} chart`}
+									className="relative mr-8 ml-auto"
+								>
 									<Sparkline data={sparkline.data} title={sparkline.label} />
 								</TooltipTrigger>
 								<TooltipContent side="top" sideOffset={5}>

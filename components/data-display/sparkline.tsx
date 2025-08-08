@@ -1,4 +1,4 @@
-import { useId } from "react";
+import { useId, useMemo } from "react";
 import { cn } from "@/lib/utils";
 
 interface SparklineProps {
@@ -20,19 +20,21 @@ export function Sparkline({
 }: SparklineProps) {
 	const id = useId();
 
+	const points = useMemo(() => {
+		const min = Math.min(...data);
+		const max = Math.max(...data);
+		const range = max - min || 1;
+
+		return data
+			.map((d, i) => {
+				const x = (i / (data.length - 1)) * width;
+				const y = height - ((d - min) / range) * height;
+				return `${x},${y}`;
+			})
+			.join(" ");
+	}, [data, width, height]);
+
 	if (data.length < 2) return null;
-
-	const min = Math.min(...data);
-	const max = Math.max(...data);
-	const range = max - min || 1;
-
-	const points = data
-		.map((d, i) => {
-			const x = (i / (data.length - 1)) * width;
-			const y = height - ((d - min) / range) * height;
-			return `${x},${y}`;
-		})
-		.join(" ");
 
 	return (
 		<svg

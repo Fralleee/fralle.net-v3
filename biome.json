@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.1.4/schema.json",
 	"assist": {
 		"actions": {
 			"source": {
@@ -29,7 +29,8 @@
 			"correctness": {
 				"noUnusedImports": {
 					"fix": "safe",
-					"level": "error"
+					"level": "error",
+					"options": {}
 				}
 			},
 			"nursery": {
@@ -39,7 +40,8 @@
 					"options": {}
 				},
 				"useUniqueElementIds": {
-					"level": "off"
+					"level": "off",
+					"options": {}
 				}
 			},
 			"recommended": true,
