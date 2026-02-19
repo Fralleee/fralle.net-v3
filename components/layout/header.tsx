@@ -48,26 +48,28 @@ export default function Header() {
 			const scrollY = window.scrollY;
 			const windowHeight = window.innerHeight;
 
+			let section: string;
 			if (scrollY < aboutSection.offsetHeight / 2) {
-				setActiveSection("about");
+				section = "about";
 			} else if (
 				scrollY + extraScrollPaddingArticles + windowHeight / 2 >=
 				articlesSection.offsetTop
 			) {
-				setActiveSection("articles");
+				section = "articles";
 			} else if (
 				scrollY + extraScrollPaddingProjects + windowHeight / 2 >=
 				projectsSection.offsetTop
 			) {
-				setActiveSection("projects");
+				section = "projects";
 			} else {
-				setActiveSection("experience");
+				section = "experience";
 			}
+			setActiveSection(section);
 		};
 
 		handleScroll();
 
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll, { passive: true });
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
@@ -120,7 +122,7 @@ export default function Header() {
 				aria-label="Social media"
 				className="group/list direction-aware-x mt-16 flex items-center"
 			>
-				<li className=" after:hidden md:after:block">
+				<li className="after:hidden md:after:block">
 					<Tooltip>
 						<TooltipTrigger className="relative">
 							<IconLink

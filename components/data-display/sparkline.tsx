@@ -1,6 +1,8 @@
 import { useId, useMemo } from "react";
 import { cn } from "@/lib/utils";
 
+const EMPTY_DATA: number[] = [];
+
 interface SparklineProps {
 	data: number[];
 	width?: number;
@@ -11,7 +13,7 @@ interface SparklineProps {
 }
 
 export function Sparkline({
-	data = [],
+	data = EMPTY_DATA,
 	width = 155,
 	height = 30,
 	strokeWidth = 2,
