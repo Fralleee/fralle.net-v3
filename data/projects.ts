@@ -2,6 +2,7 @@ import { Blocks, Code2, Gamepad2, Globe } from "lucide-react";
 import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
 import CopyCodeContextImage from "@/public/copy-code-context.png";
 import DisneyPlusImage from "@/public/disney+.png";
+import ShotKitImage from "@/public/shotkit.png";
 import VaktImage from "@/public/vakt.png";
 import type { Entry } from "../lib/types";
 
@@ -56,6 +57,25 @@ export const data: Entry[] = [
 		tags: ["TypeScript", "VSCode"],
 		title: "Copy Context",
 		url: "https://marketplace.visualstudio.com/items?itemName=Fralle.copy-code-context",
+	},
+	{
+		details:
+			"Screenshot beautifier that lets you paste, style, and export polished screenshots with minimal friction.",
+		image: ShotKitImage,
+		links: [
+			{
+				href: "https://github.com/fralleee/shot-kit",
+				icon: Code2,
+				title: "Code",
+			},
+		],
+		meta: {
+			icon: Globe,
+			text: "Web App",
+		},
+		tags: ["TypeScript", "React"],
+		title: "ShotKit",
+		url: "https://shotkit.fralle.net/",
 	},
 	{
 		details:
