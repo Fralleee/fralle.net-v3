@@ -1,7 +1,9 @@
 import { Blocks, Code2, Gamepad2, Globe } from "lucide-react";
+import CodeClickerImage from "@/public/code-clicker.png";
 import CookingWithFralleImage from "@/public/cooking-with-fralle.png";
 import CopyCodeContextImage from "@/public/copy-code-context.png";
 import DisneyPlusImage from "@/public/disney+.png";
+import QuizGameImage from "@/public/quiz-game.png";
 import ShotKitImage from "@/public/shotkit.png";
 import VaktImage from "@/public/vakt.png";
 import type { Entry } from "../lib/types";
@@ -76,6 +78,44 @@ export const data: Entry[] = [
 		tags: ["TypeScript", "React"],
 		title: "ShotKit",
 		url: "https://shotkit.fralle.net/",
+	},
+	{
+		details:
+			"Real-time multiplayer quiz with AI-generated questions. Create or join a game, pick a topic, and race for points over SSE.",
+		image: QuizGameImage,
+		links: [
+			{
+				href: "https://github.com/Fralleee/quiz-game",
+				icon: Code2,
+				title: "Code",
+			},
+		],
+		meta: {
+			icon: Gamepad2,
+			text: "Web Game",
+		},
+		tags: ["TypeScript", "NextJs"],
+		title: "Quiz Game",
+		url: "https://quiz.fralle.net/",
+	},
+	{
+		details:
+			"Programming-themed idle game where every building you run generates tech debt that scales the production penalty.",
+		image: CodeClickerImage,
+		links: [
+			{
+				href: "https://github.com/Fralleee/code-clicker",
+				icon: Code2,
+				title: "Code",
+			},
+		],
+		meta: {
+			icon: Gamepad2,
+			text: "Web Game",
+		},
+		tags: ["TypeScript", "React"],
+		title: "Code Clicker",
+		url: "https://clicker.fralle.net/",
 	},
 	{
 		details:
